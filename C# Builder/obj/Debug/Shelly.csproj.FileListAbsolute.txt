@@ -1,0 +1,15 @@
+Z:\2_GithubRepos\Shelly\C# Builder\bin\Debug\Shelly.exe.config
+Z:\2_GithubRepos\Shelly\C# Builder\bin\Debug\Shelly.exe
+Z:\2_GithubRepos\Shelly\C# Builder\bin\Debug\Shelly.pdb
+Z:\2_GithubRepos\Shelly\C# Builder\obj\Debug\Shelly.csprojAssemblyReference.cache
+Z:\2_GithubRepos\Shelly\C# Builder\obj\Debug\MainWindow.g.cs
+Z:\2_GithubRepos\Shelly\C# Builder\obj\Debug\App.g.cs
+Z:\2_GithubRepos\Shelly\C# Builder\obj\Debug\Shelly_MarkupCompile.cache
+Z:\2_GithubRepos\Shelly\C# Builder\obj\Debug\Shelly_MarkupCompile.lref
+Z:\2_GithubRepos\Shelly\C# Builder\obj\Debug\MainWindow.baml
+Z:\2_GithubRepos\Shelly\C# Builder\obj\Debug\Shelly.g.resources
+Z:\2_GithubRepos\Shelly\C# Builder\obj\Debug\Shelly.Properties.Resources.resources
+Z:\2_GithubRepos\Shelly\C# Builder\obj\Debug\Shelly.csproj.GenerateResource.cache
+Z:\2_GithubRepos\Shelly\C# Builder\obj\Debug\Shelly.csproj.CoreCompileInputs.cache
+Z:\2_GithubRepos\Shelly\C# Builder\obj\Debug\Shelly.exe
+Z:\2_GithubRepos\Shelly\C# Builder\obj\Debug\Shelly.pdb
