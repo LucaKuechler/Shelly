@@ -136,5 +136,8 @@
     <Resource Include="Resource\Images\System\Logo.ico" />
     <Resource Include="Resource\Images\System\Logo.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resource\Unbenannt.PNG" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
