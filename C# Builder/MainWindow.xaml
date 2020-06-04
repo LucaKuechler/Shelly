@@ -1,16 +1,13 @@
-﻿<Window x:Class="Shelly.MainWindow"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:Shelly"
-        Icon="Resource/Images/System/Logo.png"
-        mc:Ignorable="d"
-        Title="MainWindow" Height="800" Width="1300">
-    <StackPanel>
-        <TextBlock FontFamily="{StaticResource HelveticaLight}" FontSize="20">asd</TextBlock>
-        <TextBlock FontFamily="{StaticResource HelveticaRegular}" FontSize="20">asd</TextBlock>
-        <TextBlock FontFamily="{StaticResource HelveticaMediumBold}" FontSize="20">asd</TextBlock>
-        <TextBlock FontFamily="{StaticResource HelveticaBold}" FontSize="20">asd</TextBlock>
-    </StackPanel>
-</Window>
+﻿<sw:SWWindow x:Class="Shelly.MainWindow"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:sw="clr-namespace:SourceWeave.Controls;assembly=SourceWeave.Controls"
+             xmlns:local="clr-namespace:Shelly"
+             mc:Ignorable="d"
+             Title="MagicMainWindow" Height="800" Width="1300">
+    <Grid Margin="2">
+        <TextBlock>asd</TextBlock>
+    </Grid>
+</sw:SWWindow>

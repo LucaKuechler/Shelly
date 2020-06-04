@@ -1,0 +1,82 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:Shelly">
+
+
+    <!--ObjectRed-->
+    <Color x:Key="ObjectRed">#D56C6C</Color>
+    <SolidColorBrush x:Key="ObjectRedBrush" Color="{StaticResource ObjectRed}"></SolidColorBrush>
+
+
+    <!--ObjectRedOrange-->
+    <Color x:Key="ObjectRedOrange">#D7775E</Color>
+    <SolidColorBrush x:Key="ObjectRedOrangeBrush" Color="{StaticResource ObjectRedOrange}"></SolidColorBrush>
+
+
+    <!--ObjectOrange-->
+    <Color x:Key="ObjectOrange">#CB7E48</Color>
+    <SolidColorBrush x:Key="ObjectOrangeBrush" Color="{StaticResource ObjectOrange}"></SolidColorBrush>
+
+
+    <!--ObjectYellow-->
+    <Color x:Key="ObjectYellow">#C99942</Color>
+    <SolidColorBrush x:Key="ObjectYellowBrush" Color="{StaticResource ObjectYellow}"></SolidColorBrush>
+
+
+    <!--ObjectGreen-->
+    <Color x:Key="ObjectGreen">#749E54</Color>
+    <SolidColorBrush x:Key="ObjectGreenBrush" Color="{StaticResource ObjectGreen}"></SolidColorBrush>
+
+
+    <!--ObjectBlueGreen-->
+    <Color x:Key="ObjectBlueGreen">#659D88</Color>
+    <SolidColorBrush x:Key="ObjectBlueGreenBrush" Color="{StaticResource ObjectBlueGreen}"></SolidColorBrush>
+
+
+    <!--ObjectTurquoise-->
+    <Color x:Key="ObjectTurquoise">#6895A8</Color>
+    <SolidColorBrush x:Key="ObjectTurquoiseBrush" Color="{StaticResource ObjectTurquoise}"></SolidColorBrush>
+
+
+    <!--ObjectBlue-->
+    <Color x:Key="ObjectBlue">#6E8BBB</Color>
+    <SolidColorBrush x:Key="ObjectBluetBrush" Color="{StaticResource ObjectBlue}"></SolidColorBrush>
+
+
+    <!--ObjectBluePruple-->
+    <Color x:Key="ObjectBluePruple">#6E77BA</Color>
+    <SolidColorBrush x:Key="ObjectBluePrupleBrush" Color="{StaticResource ObjectBluePruple}"></SolidColorBrush>
+
+
+    <!--ObjectPurple-->
+    <Color x:Key="ObjectPurple">#8671B6</Color>
+    <SolidColorBrush x:Key="ObjectPurpleBrush" Color="{StaticResource ObjectPurple}"></SolidColorBrush>
+
+
+    <!--ObjectPink-->
+    <Color x:Key="ObjectPink">#B077B9</Color>
+    <SolidColorBrush x:Key="ObjectPinkBrush" Color="{StaticResource ObjectPink}"></SolidColorBrush>
+
+
+    <!--ObjectMagenta-->
+    <Color x:Key="ObjectMagenta">#CD748B</Color>
+    <SolidColorBrush x:Key="ObjectMagentaBrush" Color="{StaticResource ObjectMagenta}"></SolidColorBrush>
+
+
+    <!--ObjectGray-->
+    <Color x:Key="ObjectGray">#7E8791</Color>
+    <SolidColorBrush x:Key="ObjectGrayBrush" Color="{StaticResource ObjectGray}"></SolidColorBrush>
+
+
+    <!--ObjectGrayGreen-->
+    <Color x:Key="ObjectGrayGreen">#868B87</Color>
+    <SolidColorBrush x:Key="ObjectGrayGreenBrush" Color="{StaticResource ObjectGrayGreen}"></SolidColorBrush>
+
+
+    <!--ObjectBrown-->
+    <Color x:Key="ObjectBrown">#968B87</Color>
+    <SolidColorBrush x:Key="ObjectBrownBrush" Color="{StaticResource ObjectBrown}"></SolidColorBrush>
+
+
+
+</ResourceDictionary>

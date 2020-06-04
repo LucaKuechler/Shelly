@@ -3,12 +3,11 @@
                     xmlns:local="clr-namespace:Shelly">
 
 
-    <FontFamily x:Key="HelveticaLight">pack://application;,,,/Resource/Fonts/#HelveticaLight</FontFamily>
-    <FontFamily x:Key="HelveticaLightItalic">pack://application;,,,/Resource/Fonts/#HelveticaLightItalic</FontFamily>
-    <FontFamily x:Key="HelveticaRegular">pack://application;,,,/Resource/Fonts/#HelveticaRegular</FontFamily>
-    <FontFamily x:Key="HelveticaItalic">pack://application;,,,/Resource/Fonts/#HelveticaItalic</FontFamily>
-    <FontFamily x:Key="HelveticaMediumBold">pack://application;,,,/Resource/Fonts/HelveticaMediumBold</FontFamily>
-    <FontFamily x:Key="HelveticaBold">pack://application;,,,/Resource/Fonts/HelveticaBold</FontFamily>
-
+    <FontFamily x:Key="HelveticaLight">pack://application:,,,/Shelly;Component/Resource/Fonts/HelveticaLight.ttf #Helvetica 45 Light</FontFamily>
+    <FontFamily x:Key="HelveticaLightItalic">pack://application:,,,/Shelly;Component/Resource/Fonts/HelveticaLightItalic.ttf #Helvetica 45 Light</FontFamily>
+    <FontFamily x:Key="HelveticaRegular">pack://application:,,,/Shelly;Component/Resource/Fonts/HelveticaRegular.ttf #Helvetica 55 Roman</FontFamily>
+    <FontFamily x:Key="HelveticaItalic">pack://application:,,,/Shelly;Component/Resource/Fonts/HelveticaItalic.ttf #Helvetica 55 Roman</FontFamily>
+    <FontFamily x:Key="HelveticaMediumBold">pack://application:,,,/Shelly;Component/Resource/Fonts/HelveticaMediumBold.ttf #Helvetica 65 Medium</FontFamily>
+    <FontFamily x:Key="HelveticaBold">pack://application:,,,/Shelly;Component/Resource/Fonts/HelveticaBold.ttf #Helvetica 65 Medium</FontFamily>
 
 </ResourceDictionary>

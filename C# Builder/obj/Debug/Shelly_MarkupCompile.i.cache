@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 Z:\2_GithubRepos\Shelly\C# Builder\App.xaml
-2-900777777
+683117216
 
 6-958909034
-191751896630
-MainWindow.xaml;Resource\Styles\Fonts.xaml;
+21700496519
+Resource\Styles\Colors\SystemColors.xaml;Resource\Styles\Colors\SectionColors.xaml;Resource\Styles\Colors\ObjectColors.xaml;Resource\Styles\WindowStyles.xaml;MainWindow.xaml;Resource\Styles\Fonts.xaml;
 
-False
+True
 

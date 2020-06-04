@@ -1,0 +1,32 @@
+E:\Downloads\GitHubRepos\wpf-custom-window\WPFCustomWIndow\SourceWeave.Controls\bin\Debug\SourceWeave.Controls.dll
+E:\Downloads\GitHubRepos\wpf-custom-window\WPFCustomWIndow\SourceWeave.Controls\bin\Debug\SourceWeave.Controls.pdb
+E:\Downloads\GitHubRepos\wpf-custom-window\WPFCustomWIndow\SourceWeave.Controls\bin\Debug\FontAwesome.WPF.dll
+E:\Downloads\GitHubRepos\wpf-custom-window\WPFCustomWIndow\SourceWeave.Controls\bin\Debug\FontAwesome.WPF.xml
+E:\Downloads\GitHubRepos\wpf-custom-window\WPFCustomWIndow\SourceWeave.Controls\obj\Debug\SourceWeave.Controls.csprojAssemblyReference.cache
+E:\Downloads\GitHubRepos\wpf-custom-window\WPFCustomWIndow\SourceWeave.Controls\obj\Debug\GeneratedInternalTypeHelper.g.cs
+E:\Downloads\GitHubRepos\wpf-custom-window\WPFCustomWIndow\SourceWeave.Controls\obj\Debug\SourceWeave.Controls_MarkupCompile.cache
+E:\Downloads\GitHubRepos\wpf-custom-window\WPFCustomWIndow\SourceWeave.Controls\obj\Debug\SourceWeave.Controls_MarkupCompile.lref
+E:\Downloads\GitHubRepos\wpf-custom-window\WPFCustomWIndow\SourceWeave.Controls\obj\Debug\Themes\SWStyles.baml
+E:\Downloads\GitHubRepos\wpf-custom-window\WPFCustomWIndow\SourceWeave.Controls\obj\Debug\SourceWeave.Controls.g.resources
+E:\Downloads\GitHubRepos\wpf-custom-window\WPFCustomWIndow\SourceWeave.Controls\obj\Debug\SourceWeave.Controls.Properties.Resources.resources
+E:\Downloads\GitHubRepos\wpf-custom-window\WPFCustomWIndow\SourceWeave.Controls\obj\Debug\SourceWeave.Controls.csproj.GenerateResource.cache
+E:\Downloads\GitHubRepos\wpf-custom-window\WPFCustomWIndow\SourceWeave.Controls\obj\Debug\SourceWeave.Controls.csproj.CoreCompileInputs.cache
+E:\Downloads\GitHubRepos\wpf-custom-window\WPFCustomWIndow\SourceWeave.Controls\obj\Debug\SourceWeave.Controls.csproj.CopyComplete
+E:\Downloads\GitHubRepos\wpf-custom-window\WPFCustomWIndow\SourceWeave.Controls\obj\Debug\SourceWeave.Controls.dll
+E:\Downloads\GitHubRepos\wpf-custom-window\WPFCustomWIndow\SourceWeave.Controls\obj\Debug\SourceWeave.Controls.pdb
+Z:\2_GithubRepos\Shelly\C# Builder\SourceWeave.Controls\bin\Debug\SourceWeave.Controls.dll
+Z:\2_GithubRepos\Shelly\C# Builder\SourceWeave.Controls\bin\Debug\SourceWeave.Controls.pdb
+Z:\2_GithubRepos\Shelly\C# Builder\SourceWeave.Controls\bin\Debug\FontAwesome.WPF.dll
+Z:\2_GithubRepos\Shelly\C# Builder\SourceWeave.Controls\bin\Debug\FontAwesome.WPF.xml
+Z:\2_GithubRepos\Shelly\C# Builder\SourceWeave.Controls\obj\Debug\SourceWeave.Controls.csprojAssemblyReference.cache
+Z:\2_GithubRepos\Shelly\C# Builder\SourceWeave.Controls\obj\Debug\GeneratedInternalTypeHelper.g.cs
+Z:\2_GithubRepos\Shelly\C# Builder\SourceWeave.Controls\obj\Debug\SourceWeave.Controls_MarkupCompile.cache
+Z:\2_GithubRepos\Shelly\C# Builder\SourceWeave.Controls\obj\Debug\SourceWeave.Controls_MarkupCompile.lref
+Z:\2_GithubRepos\Shelly\C# Builder\SourceWeave.Controls\obj\Debug\Themes\SWStyles.baml
+Z:\2_GithubRepos\Shelly\C# Builder\SourceWeave.Controls\obj\Debug\SourceWeave.Controls.g.resources
+Z:\2_GithubRepos\Shelly\C# Builder\SourceWeave.Controls\obj\Debug\SourceWeave.Controls.Properties.Resources.resources
+Z:\2_GithubRepos\Shelly\C# Builder\SourceWeave.Controls\obj\Debug\SourceWeave.Controls.csproj.GenerateResource.cache
+Z:\2_GithubRepos\Shelly\C# Builder\SourceWeave.Controls\obj\Debug\SourceWeave.Controls.csproj.CoreCompileInputs.cache
+Z:\2_GithubRepos\Shelly\C# Builder\SourceWeave.Controls\obj\Debug\SourceWeave.Controls.csproj.CopyComplete
+Z:\2_GithubRepos\Shelly\C# Builder\SourceWeave.Controls\obj\Debug\SourceWeave.Controls.dll
+Z:\2_GithubRepos\Shelly\C# Builder\SourceWeave.Controls\obj\Debug\SourceWeave.Controls.pdb

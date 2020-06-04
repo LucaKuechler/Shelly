@@ -1,0 +1,67 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:Shelly">
+
+
+    <!--DarkBlack-->
+    <Color x:Key="DarkBlack">#1C1C1E</Color>
+    <SolidColorBrush x:Key="DarkBlackBrush" Color="{StaticResource DarkBlack}"></SolidColorBrush>
+
+
+    <!--DarkNormal-->
+    <Color x:Key="DarkNormal">#2C2C2E</Color>
+    <SolidColorBrush x:Key="DarkNormalBrush" Color="{StaticResource DarkNormal}"></SolidColorBrush>
+
+
+    <!--DarkLight-->
+    <Color x:Key="DarkLight">#3A3A3C</Color>
+    <SolidColorBrush x:Key="DarkLightBrush" Color="{StaticResource DarkLight}"></SolidColorBrush>
+
+
+    <!--DarkGreyBlack-->
+    <Color x:Key="DarkGreyBlack">#636366</Color>
+    <SolidColorBrush x:Key="DarkGreyBlackBrush" Color="{StaticResource DarkGreyBlack}"></SolidColorBrush>
+
+
+    <!--DarkGreyNormal-->
+    <Color x:Key="DarkGreyNormal">#8E8E93</Color>
+    <SolidColorBrush x:Key="DarkGreyNormalBrush" Color="{StaticResource DarkGreyNormal}"></SolidColorBrush>
+
+
+    <!--DarkGreyLight-->
+    <Color x:Key="DarkGreyLight">#C7C7CC</Color>
+    <SolidColorBrush x:Key="DarkGreyLightBrush" Color="{StaticResource DarkGreyLight}"></SolidColorBrush>
+
+
+    <!--BackgroundDark-->
+    <Color x:Key="BackgroundDark">#E5E5EA</Color>
+    <SolidColorBrush x:Key="BackgroundDarktBrush" Color="{StaticResource BackgroundDark}"></SolidColorBrush>
+
+
+    <!--BackgroundLight-->
+    <Color x:Key="BackgroundLight">#F2F2F7</Color>
+    <SolidColorBrush x:Key="BackgroundLightBrush" Color="{StaticResource BackgroundLight}"></SolidColorBrush>
+
+
+    <!--SystemColorDark-->
+    <Color x:Key="SystemColorDark">#006AD5</Color>
+    <SolidColorBrush x:Key="SystemColorDarkBrush" Color="{StaticResource SystemColorDark}"></SolidColorBrush>
+
+
+    <!--SystemColorNormal-->
+    <Color x:Key="SystemColorNormal">#0A84FF</Color>
+    <SolidColorBrush x:Key="SystemColorNormalBrush" Color="{StaticResource SystemColorNormal}"></SolidColorBrush>
+
+
+    <!--SystemColorLight-->
+    <Color x:Key="SystemColorLight">#B7DAFD</Color>
+    <SolidColorBrush x:Key="SystemColorLightBrush" Color="{StaticResource SystemColorLight}"></SolidColorBrush>
+
+
+    <!--White-->
+    <Color x:Key="White">#BF5AF2</Color>
+    <SolidColorBrush x:Key="WhiteBrush" Color="{StaticResource White}"></SolidColorBrush>
+    
+    
+
+</ResourceDictionary>

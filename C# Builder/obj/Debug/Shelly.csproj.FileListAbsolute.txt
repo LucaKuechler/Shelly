@@ -25,3 +25,12 @@ Z:\2_GithubRepos\Shelly\C# Builder\bin\Debug\System.Data.SQLite.dll.config
 Z:\2_GithubRepos\Shelly\C# Builder\obj\Debug\App.baml
 Z:\2_GithubRepos\Shelly\C# Builder\obj\Debug\Resource\Styles\Fonts.baml
 Z:\2_GithubRepos\Shelly\C# Builder\obj\Debug\Shelly.csproj.CopyComplete
+Z:\2_GithubRepos\Shelly\C# Builder\obj\Debug\GeneratedInternalTypeHelper.g.cs
+Z:\2_GithubRepos\Shelly\C# Builder\bin\Debug\SourceWeave.Controls.dll
+Z:\2_GithubRepos\Shelly\C# Builder\bin\Debug\SourceWeave.Controls.pdb
+Z:\2_GithubRepos\Shelly\C# Builder\obj\Debug\Resource\Styles\WindowStyles.baml
+Z:\2_GithubRepos\Shelly\C# Builder\bin\Debug\FontAwesome.WPF.dll
+Z:\2_GithubRepos\Shelly\C# Builder\bin\Debug\FontAwesome.WPF.xml
+Z:\2_GithubRepos\Shelly\C# Builder\obj\Debug\Resource\Styles\Colors\SystemColors.baml
+Z:\2_GithubRepos\Shelly\C# Builder\obj\Debug\Resource\Styles\Colors\SectionColors.baml
+Z:\2_GithubRepos\Shelly\C# Builder\obj\Debug\Resource\Styles\Colors\ObjectColors.baml
