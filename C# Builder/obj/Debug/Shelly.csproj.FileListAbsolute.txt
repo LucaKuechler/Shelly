@@ -13,3 +13,15 @@ Z:\2_GithubRepos\Shelly\C# Builder\obj\Debug\Shelly.csproj.GenerateResource.cach
 Z:\2_GithubRepos\Shelly\C# Builder\obj\Debug\Shelly.csproj.CoreCompileInputs.cache
 Z:\2_GithubRepos\Shelly\C# Builder\obj\Debug\Shelly.exe
 Z:\2_GithubRepos\Shelly\C# Builder\obj\Debug\Shelly.pdb
+Z:\2_GithubRepos\Shelly\C# Builder\bin\Debug\EntityFramework.dll
+Z:\2_GithubRepos\Shelly\C# Builder\bin\Debug\EntityFramework.SqlServer.dll
+Z:\2_GithubRepos\Shelly\C# Builder\bin\Debug\System.Data.SQLite.dll
+Z:\2_GithubRepos\Shelly\C# Builder\bin\Debug\System.Data.SQLite.EF6.dll
+Z:\2_GithubRepos\Shelly\C# Builder\bin\Debug\System.Data.SQLite.Linq.dll
+Z:\2_GithubRepos\Shelly\C# Builder\bin\Debug\EntityFramework.xml
+Z:\2_GithubRepos\Shelly\C# Builder\bin\Debug\EntityFramework.SqlServer.xml
+Z:\2_GithubRepos\Shelly\C# Builder\bin\Debug\System.Data.SQLite.xml
+Z:\2_GithubRepos\Shelly\C# Builder\bin\Debug\System.Data.SQLite.dll.config
+Z:\2_GithubRepos\Shelly\C# Builder\obj\Debug\App.baml
+Z:\2_GithubRepos\Shelly\C# Builder\obj\Debug\Resource\Styles\Fonts.baml
+Z:\2_GithubRepos\Shelly\C# Builder\obj\Debug\Shelly.csproj.CopyComplete

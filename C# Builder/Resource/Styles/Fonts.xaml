@@ -1,0 +1,14 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:Shelly">
+
+
+    <FontFamily x:Key="HelveticaLight">pack://application;,,,/Resource/Fonts/#HelveticaLight</FontFamily>
+    <FontFamily x:Key="HelveticaLightItalic">pack://application;,,,/Resource/Fonts/#HelveticaLightItalic</FontFamily>
+    <FontFamily x:Key="HelveticaRegular">pack://application;,,,/Resource/Fonts/#HelveticaRegular</FontFamily>
+    <FontFamily x:Key="HelveticaItalic">pack://application;,,,/Resource/Fonts/#HelveticaItalic</FontFamily>
+    <FontFamily x:Key="HelveticaMediumBold">pack://application;,,,/Resource/Fonts/HelveticaMediumBold</FontFamily>
+    <FontFamily x:Key="HelveticaBold">pack://application;,,,/Resource/Fonts/HelveticaBold</FontFamily>
+
+
+</ResourceDictionary>

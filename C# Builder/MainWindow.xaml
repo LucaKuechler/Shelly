@@ -7,7 +7,10 @@
         Icon="Resource/Images/System/Logo.png"
         mc:Ignorable="d"
         Title="MainWindow" Height="800" Width="1300">
-    <Grid>
-
-    </Grid>
+    <StackPanel>
+        <TextBlock FontFamily="{StaticResource HelveticaLight}" FontSize="20">asd</TextBlock>
+        <TextBlock FontFamily="{StaticResource HelveticaRegular}" FontSize="20">asd</TextBlock>
+        <TextBlock FontFamily="{StaticResource HelveticaMediumBold}" FontSize="20">asd</TextBlock>
+        <TextBlock FontFamily="{StaticResource HelveticaBold}" FontSize="20">asd</TextBlock>
+    </StackPanel>
 </Window>
