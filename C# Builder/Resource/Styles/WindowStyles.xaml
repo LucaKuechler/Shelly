@@ -3,6 +3,7 @@
                     xmlns:local="clr-namespace:Shelly">
 
 
-    <Style TargetType="local:MainWindow" BasedOn="{StaticResource SWWindowStyle}"/>
+    <Style TargetType="local:Create" BasedOn="{StaticResource SWWindowStyle}"/>
+    <Style TargetType="local:Overview" BasedOn="{StaticResource SWWindowStyle}"/>
 
 </ResourceDictionary>

@@ -2,11 +2,9 @@ Z:\2_GithubRepos\Shelly\C# Builder\bin\Debug\Shelly.exe.config
 Z:\2_GithubRepos\Shelly\C# Builder\bin\Debug\Shelly.exe
 Z:\2_GithubRepos\Shelly\C# Builder\bin\Debug\Shelly.pdb
 Z:\2_GithubRepos\Shelly\C# Builder\obj\Debug\Shelly.csprojAssemblyReference.cache
-Z:\2_GithubRepos\Shelly\C# Builder\obj\Debug\MainWindow.g.cs
 Z:\2_GithubRepos\Shelly\C# Builder\obj\Debug\App.g.cs
 Z:\2_GithubRepos\Shelly\C# Builder\obj\Debug\Shelly_MarkupCompile.cache
 Z:\2_GithubRepos\Shelly\C# Builder\obj\Debug\Shelly_MarkupCompile.lref
-Z:\2_GithubRepos\Shelly\C# Builder\obj\Debug\MainWindow.baml
 Z:\2_GithubRepos\Shelly\C# Builder\obj\Debug\Shelly.g.resources
 Z:\2_GithubRepos\Shelly\C# Builder\obj\Debug\Shelly.Properties.Resources.resources
 Z:\2_GithubRepos\Shelly\C# Builder\obj\Debug\Shelly.csproj.GenerateResource.cache
@@ -34,3 +32,11 @@ Z:\2_GithubRepos\Shelly\C# Builder\bin\Debug\FontAwesome.WPF.xml
 Z:\2_GithubRepos\Shelly\C# Builder\obj\Debug\Resource\Styles\Colors\SystemColors.baml
 Z:\2_GithubRepos\Shelly\C# Builder\obj\Debug\Resource\Styles\Colors\SectionColors.baml
 Z:\2_GithubRepos\Shelly\C# Builder\obj\Debug\Resource\Styles\Colors\ObjectColors.baml
+Z:\2_GithubRepos\Shelly\C# Builder\obj\Debug\Navigation\Windows\Overview.g.cs
+Z:\2_GithubRepos\Shelly\C# Builder\obj\Debug\Navigation\Windows\Overview.baml
+Z:\2_GithubRepos\Shelly\C# Builder\obj\Debug\Navigation\Windows\Create.g.cs
+Z:\2_GithubRepos\Shelly\C# Builder\obj\Debug\Navigation\Windows\Create.baml
+Z:\2_GithubRepos\Shelly\C# Builder\obj\Debug\Navigation\Pages\FirstSectionSide.g.cs
+Z:\2_GithubRepos\Shelly\C# Builder\obj\Debug\Navigation\Pages\FirstSectionSide.baml
+Z:\2_GithubRepos\Shelly\C# Builder\obj\Debug\Navigation\Pages\StaticSide.g.cs
+Z:\2_GithubRepos\Shelly\C# Builder\obj\Debug\Navigation\Pages\StaticSide.baml

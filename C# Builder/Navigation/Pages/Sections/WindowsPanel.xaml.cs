@@ -1,5 +1,4 @@
-﻿using SourceWeave.Controls;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -17,11 +16,11 @@ using System.Windows.Shapes;
 namespace Shelly
 {
     /// <summary>
-    /// Interaktionslogik für MainWindow.xaml
+    /// Interaktionslogik für WindowsPanel
     /// </summary>
-    public partial class MainWindow : SWWindow
+    public partial class WindowsPanel : Page
     {
-        public MainWindow()
+        public WindowsPanel()
         {
             InitializeComponent();
         }
