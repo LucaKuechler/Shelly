@@ -131,6 +131,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Resource\Styles\Buttons\ObjectButton.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Resource\Styles\Buttons\TagButton.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -150,6 +154,10 @@
     <Page Include="Resource\Styles\Colors\ObjectColors.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resource\Styles\Scrollviewer.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Resource\Styles\SearchBar.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -245,7 +253,6 @@
     <Folder Include="Navigation\Pages\Sections\Programs\" />
     <Folder Include="Navigation\PopUps\" />
     <Folder Include="Resource\Images\CommandType\" />
-    <Folder Include="Resource\Images\Object\" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="logo.ico" />
@@ -303,6 +310,27 @@
   <ItemGroup>
     <Resource Include="Resource\Images\System\Forward.png" />
     <Resource Include="Resource\Images\System\ForwardHover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resource\Images\Object\Image1.png" />
+    <Resource Include="Resource\Images\Object\Image10.png" />
+    <Resource Include="Resource\Images\Object\Image11.png" />
+    <Resource Include="Resource\Images\Object\Image12.png" />
+    <Resource Include="Resource\Images\Object\Image13.png" />
+    <Resource Include="Resource\Images\Object\Image14.png" />
+    <Resource Include="Resource\Images\Object\Image15.png" />
+    <Resource Include="Resource\Images\Object\Image16.png" />
+    <Resource Include="Resource\Images\Object\Image17.png" />
+    <Resource Include="Resource\Images\Object\Image18.png" />
+    <Resource Include="Resource\Images\Object\Image19.png" />
+    <Resource Include="Resource\Images\Object\Image2.png" />
+    <Resource Include="Resource\Images\Object\Image3.png" />
+    <Resource Include="Resource\Images\Object\Image4.png" />
+    <Resource Include="Resource\Images\Object\Image5.png" />
+    <Resource Include="Resource\Images\Object\Image6.png" />
+    <Resource Include="Resource\Images\Object\Image7.png" />
+    <Resource Include="Resource\Images\Object\Image8.png" />
+    <Resource Include="Resource\Images\Object\Image9.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

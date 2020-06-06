@@ -11,6 +11,7 @@
                 <ResourceDictionary Source="Resource/Styles/Fonts.xaml"></ResourceDictionary>
                 <ResourceDictionary Source="Resource/Styles/Title.xaml"></ResourceDictionary>
                 <ResourceDictionary Source="Resource/Styles/SearchBar.xaml"></ResourceDictionary>
+                <ResourceDictionary Source="Resource/Styles/Scrollviewer.xaml"></ResourceDictionary>
                 <ResourceDictionary Source="pack://application:,,,/SourceWeave.Controls;component/Themes/SWStyles.xaml"/>
                 <ResourceDictionary Source="Resource/Styles/WindowStyles.xaml"/>
                 <ResourceDictionary Source="Resource/Styles/Colors/ObjectColors.xaml"></ResourceDictionary>
@@ -18,6 +19,7 @@
                 <ResourceDictionary Source="Resource/Styles/Colors/SystemColors.xaml"></ResourceDictionary>
                 <ResourceDictionary Source="Resource/Styles/Buttons/SystemButtons.xaml"></ResourceDictionary>
                 <ResourceDictionary Source="Resource/Styles/Buttons/TagButton.xaml"></ResourceDictionary>
+                <ResourceDictionary Source="Resource/Styles/Buttons/ObjectButton.xaml"></ResourceDictionary>
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>
