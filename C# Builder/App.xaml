@@ -2,7 +2,7 @@
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:local="clr-namespace:Shelly"
-             StartupUri="Navigation/Windows/Overview.xaml">
+             StartupUri="Navigation/Windows/Create.xaml">
 
     <Application.Resources>
         <ResourceDictionary>
@@ -20,6 +20,8 @@
                 <ResourceDictionary Source="Resource/Styles/Buttons/SystemButtons.xaml"></ResourceDictionary>
                 <ResourceDictionary Source="Resource/Styles/Buttons/TagButton.xaml"></ResourceDictionary>
                 <ResourceDictionary Source="Resource/Styles/Buttons/ObjectButton.xaml"></ResourceDictionary>
+                <ResourceDictionary Source="Resource/Styles/Buttons/WorkSpaceButton.xaml"></ResourceDictionary>
+                <ResourceDictionary Source="Resource/Styles/Buttons/SectionButton.xaml"></ResourceDictionary>
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>

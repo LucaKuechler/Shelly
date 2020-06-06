@@ -5,10 +5,58 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:Shelly"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
+      d:DesignHeight="756" d:DesignWidth="940"
       Title="Workspace">
 
-    <Grid Background="red">
-        <TextBlock>asd</TextBlock>
-    </Grid>
+    <Border Background="{StaticResource BackgroundLightBrush}">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="110"></RowDefinition>
+                <RowDefinition Height="1*"></RowDefinition>
+            </Grid.RowDefinitions>
+
+            <!--#region Upper Half-->
+            <StackPanel Grid.Row="0">
+
+                <!-- Top Bar -->
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto"></ColumnDefinition>
+                        <ColumnDefinition Width="1*"></ColumnDefinition>
+                        <ColumnDefinition Width="auto"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+
+                    <Button Style="{StaticResource SystemButton}" Margin="30,15,0,0" Grid.Column="0">Cancel</Button>
+
+                    <Button Style="{StaticResource SystemButton}" Margin="0,15,30,0" Grid.Column="1" HorizontalAlignment="Right">Next</Button>
+
+                </Grid>
+
+                <!-- Header -->
+                <TextBlock Style="{StaticResource WindowTitle}" Margin="45,20,0,0">New Command</TextBlock>
+
+            </StackPanel>
+            <!--#endregion-->
+
+
+            <!--#region Workspace Section-->
+            <Grid Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="80"></ColumnDefinition>
+                    <ColumnDefinition Width="1*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+                <ScrollViewer Grid.Column="1" Margin="20,0,20,0" VerticalScrollBarVisibility="Hidden">
+                    <StackPanel x:Name="WorkspaceList" VerticalAlignment="Top" HorizontalAlignment="Left" Height="1000" Orientation="Vertical">
+
+                        <!-- Show Objects -->
+
+
+                    </StackPanel>
+                </ScrollViewer>
+
+            </Grid>
+            <!--#endregion-->
+        </Grid>
+    </Border>
 </Page>

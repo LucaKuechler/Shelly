@@ -58,3 +58,5 @@ Z:\2_GithubRepos\Shelly\C# Builder\obj\Debug\Resource\Styles\SearchBar.baml
 Z:\2_GithubRepos\Shelly\C# Builder\obj\Debug\Resource\Styles\Buttons\TagButton.baml
 Z:\2_GithubRepos\Shelly\C# Builder\obj\Debug\Resource\Styles\Scrollviewer.baml
 Z:\2_GithubRepos\Shelly\C# Builder\obj\Debug\Resource\Styles\Buttons\ObjectButton.baml
+Z:\2_GithubRepos\Shelly\C# Builder\obj\Debug\Resource\Styles\Buttons\WorkSpaceButton.baml
+Z:\2_GithubRepos\Shelly\C# Builder\obj\Debug\Resource\Styles\Buttons\SectionButton.baml

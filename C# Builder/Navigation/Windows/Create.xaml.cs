@@ -24,6 +24,8 @@ namespace Shelly
         public Create()
         {
             InitializeComponent();
+            LeftSideFrame.Navigate(new SectionPanel());
+            RightSideFrame.Navigate(new Workspace());
         }
     }
 }

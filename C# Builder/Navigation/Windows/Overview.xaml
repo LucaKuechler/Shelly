@@ -65,11 +65,36 @@
             
             
             <!--#region Lower Half-->
-            <ScrollViewer Grid.Row="1" Margin="60,0,60,0">
+            <ScrollViewer Grid.Row="1" Margin="60,-15,60,10">
                 <WrapPanel x:Name="ObjectList" VerticalAlignment="Top" HorizontalAlignment="Left" Height="1000">
 
                     <!-- Show Objects -->
                     <Button Height="100" Width="210" Style="{StaticResource AddObject}"></Button>
+                    <Button Height="100" Width="210" Style="{StaticResource DisplayObject}">Hellosssssssssssssssss</Button>
+                    <Button Height="100" Width="210" Style="{StaticResource DisplayObject}">Hellosssssssssssssssss</Button>
+                    <Button Height="100" Width="210" Style="{StaticResource DisplayObject}">Hellosssssssssssssssss</Button>
+                    <Button Height="100" Width="210" Style="{StaticResource DisplayObject}">Hellosssssssssssssssss</Button>
+                    <Button Height="100" Width="210" Style="{StaticResource DisplayObject}">Hellosssssssssssssssss</Button>
+                    <Button Height="100" Width="210" Style="{StaticResource DisplayObject}">Hellosssssssssssssssss</Button>
+                    <Button Height="100" Width="210" Style="{StaticResource DisplayObject}">Hellosssssssssssssssss</Button>
+                    <Button Height="100" Width="210" Style="{StaticResource DisplayObject}">Hellosssssssssssssssss</Button>
+                    <Button Height="100" Width="210" Style="{StaticResource DisplayObject}">Hellosssssssssssssssss</Button>
+                    <Button Height="100" Width="210" Style="{StaticResource DisplayObject}">Hellosssssssssssssssss</Button>
+                    <Button Height="100" Width="210" Style="{StaticResource DisplayObject}">Hellosssssssssssssssss</Button>
+                    <Button Height="100" Width="210" Style="{StaticResource DisplayObject}">Hellosssssssssssssssss</Button>
+                    <Button Height="100" Width="210" Style="{StaticResource DisplayObject}">Hellosssssssssssssssss</Button>
+                    <Button Height="100" Width="210" Style="{StaticResource DisplayObject}">Hellosssssssssssssssss</Button>
+                    <Button Height="100" Width="210" Style="{StaticResource DisplayObject}">Hellosssssssssssssssss</Button>
+                    <Button Height="100" Width="210" Style="{StaticResource DisplayObject}">Hellosssssssssssssssss</Button>
+                    <Button Height="100" Width="210" Style="{StaticResource DisplayObject}">Hellosssssssssssssssss</Button>
+                    <Button Height="100" Width="210" Style="{StaticResource DisplayObject}">Hellosssssssssssssssss</Button>
+                    <Button Height="100" Width="210" Style="{StaticResource DisplayObject}">Hellosssssssssssssssss</Button>
+                    <Button Height="100" Width="210" Style="{StaticResource DisplayObject}">Hellosssssssssssssssss</Button>
+                    <Button Height="100" Width="210" Style="{StaticResource DisplayObject}">Hellosssssssssssssssss</Button>
+                    <Button Height="100" Width="210" Style="{StaticResource DisplayObject}">Hellosssssssssssssssss</Button>
+                    <Button Height="100" Width="210" Style="{StaticResource DisplayObject}">Hellosssssssssssssssss</Button>
+                    <Button Height="100" Width="210" Style="{StaticResource DisplayObject}">Hellosssssssssssssssss</Button>
+                    <Button Height="100" Width="210" Style="{StaticResource DisplayObject}">Hellosssssssssssssssss</Button>
                     <Button Height="100" Width="210" Style="{StaticResource DisplayObject}">Hellosssssssssssssssss</Button>
                     
 

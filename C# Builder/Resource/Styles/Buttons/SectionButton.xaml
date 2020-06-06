@@ -1,0 +1,44 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:Shelly">
+
+
+    <!-- Import Font and Colors -->
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="../Fonts.xaml"></ResourceDictionary>
+        <ResourceDictionary Source="../Colors/SystemColors.xaml"></ResourceDictionary>
+    </ResourceDictionary.MergedDictionaries>
+    
+    
+    <!-- Section Button -->
+    <Style x:Key="SectionButton" TargetType="{x:Type Button}" BasedOn="{StaticResource hoverless}">
+
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border Background="{StaticResource SectionYellowBrush}" CornerRadius="5" Margin="0,10,0,10">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="auto"></ColumnDefinition>
+                                <ColumnDefinition Width="1*"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+
+                            <Image Grid.Column="0" Source="pack://application:,,,/Shelly;Component/Resource/Images/Command/Sections/Windows.png" Height="40" Margin="5"></Image>
+                            <TextBlock VerticalAlignment="Center" Grid.Column="1" Text="{TemplateBinding Content}" HorizontalAlignment="Left" FontSize="17" FontFamily="{StaticResource HelveticaMediumBold}" Foreground="{StaticResource WhiteBrush}"></TextBlock>
+                        
+                        </Grid>
+                    </Border>
+
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+
+        <Setter Property="BitmapEffect">
+            <Setter.Value>
+                <DropShadowBitmapEffect Color="Black" Direction="320" Softness="1" ShadowDepth="10" Opacity="0.5"></DropShadowBitmapEffect>
+            </Setter.Value>
+        </Setter>
+    
+    </Style>
+
+</ResourceDictionary>

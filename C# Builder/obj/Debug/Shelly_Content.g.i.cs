@@ -8,24 +8,14 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resource/images/object/image1.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resource/images/object/image10.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resource/images/object/image11.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resource/images/object/image12.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resource/images/object/image13.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resource/images/object/image14.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resource/images/object/image15.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resource/images/object/image16.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resource/images/object/image17.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resource/images/object/image18.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resource/images/object/image19.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resource/images/object/image2.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resource/images/object/image3.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resource/images/object/image4.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resource/images/object/image5.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resource/images/object/image6.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resource/images/object/image7.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resource/images/object/image8.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resource/images/object/image9.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resource/images/command/programs/opera.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resource/images/command/programs/operaauto.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resource/images/command/programs/passwordmanager.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resource/images/command/sections/input.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resource/images/command/sections/layout.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resource/images/command/sections/passwordmanager.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resource/images/command/sections/programs.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resource/images/command/sections/web.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resource/images/command/sections/windows.png")]
 
 

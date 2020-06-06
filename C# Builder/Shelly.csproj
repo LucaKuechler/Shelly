@@ -131,6 +131,14 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Resource\Styles\Buttons\SectionButton.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resource\Styles\Buttons\WorkSpaceButton.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="Resource\Styles\Buttons\ObjectButton.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -250,9 +258,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="BackEnd\" />
+    <Folder Include="Commands\" />
     <Folder Include="Navigation\Pages\Sections\Programs\" />
     <Folder Include="Navigation\PopUps\" />
-    <Folder Include="Resource\Images\CommandType\" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="logo.ico" />
@@ -331,6 +339,17 @@
     <Resource Include="Resource\Images\Object\Image7.png" />
     <Resource Include="Resource\Images\Object\Image8.png" />
     <Resource Include="Resource\Images\Object\Image9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resource\Images\Command\Programs\Opera.png" />
+    <Resource Include="Resource\Images\Command\Programs\OperaAuto.png" />
+    <Resource Include="Resource\Images\Command\Programs\PasswordManager.png" />
+    <Resource Include="Resource\Images\Command\Sections\Input.png" />
+    <Resource Include="Resource\Images\Command\Sections\Layout.png" />
+    <Resource Include="Resource\Images\Command\Sections\PasswordManager.png" />
+    <Resource Include="Resource\Images\Command\Sections\Programs.png" />
+    <Resource Include="Resource\Images\Command\Sections\Web.png" />
+    <Resource Include="Resource\Images\Command\Sections\Windows.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
