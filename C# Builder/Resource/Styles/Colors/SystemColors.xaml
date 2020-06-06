@@ -59,9 +59,13 @@
 
 
     <!--White-->
-    <Color x:Key="White">#BF5AF2</Color>
+    <Color x:Key="White">#FFFFFF</Color>
     <SolidColorBrush x:Key="WhiteBrush" Color="{StaticResource White}"></SolidColorBrush>
-    
-    
+
+
+
+    <!--SystemColorNormal Opacity-->
+    <Color x:Key="SystemColorNormalOpacity">#0A84FF</Color>
+    <SolidColorBrush x:Key="SystemColorNormalOpacityBrush" Color="{StaticResource SystemColorNormalOpacity}" Opacity="0.6"></SolidColorBrush>
 
 </ResourceDictionary>

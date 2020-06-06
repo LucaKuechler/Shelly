@@ -55,3 +55,4 @@ Z:\2_GithubRepos\Shelly\C# Builder\obj\Debug\Navigation\Pages\SectionPanel.baml
 Z:\2_GithubRepos\Shelly\C# Builder\obj\Debug\Resource\Styles\Buttons\SystemButtons.baml
 Z:\2_GithubRepos\Shelly\C# Builder\obj\Debug\Resource\Styles\Title.baml
 Z:\2_GithubRepos\Shelly\C# Builder\obj\Debug\Resource\Styles\SearchBar.baml
+Z:\2_GithubRepos\Shelly\C# Builder\obj\Debug\Resource\Styles\Buttons\TagButton.baml

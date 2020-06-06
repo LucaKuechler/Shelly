@@ -1,0 +1,88 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:Shelly">
+    
+    
+    <!-- Import Font and Colors -->
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="../Fonts.xaml"></ResourceDictionary>
+        <ResourceDictionary Source="../Colors/SystemColors.xaml"></ResourceDictionary>
+    </ResourceDictionary.MergedDictionaries>
+
+
+    <!-- Basic Tag Styling -->
+    <Style x:Key="BasicTag" TargetType="{x:Type Button}" BasedOn="{StaticResource hoverless}">
+        <Setter Property="Foreground" Value="{StaticResource DarkBlackBrush}"></Setter>
+        <Setter Property="Margin" Value="20,0,0,0"></Setter>
+    </Style>
+    
+    
+    <!-- Add Tag Styling -->
+    <Style x:Key="AddTag" TargetType="{x:Type Button}" BasedOn="{StaticResource BasicTag}">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border BorderBrush="{StaticResource SystemColorNormalBrush}" BorderThickness="2" CornerRadius="10" Background="{StaticResource WhiteBrush}">
+                        <Grid Margin="10,0,10,0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="auto"></ColumnDefinition>
+                                <ColumnDefinition Width="1*"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+
+                            <Image Margin="0,0,5,0" Grid.Column="0" Height="17" Width="17" Source="pack://application:,,,/Shelly;Component/Resource/Images/System/PlusTag.png"></Image>
+                            <TextBlock Grid.Column="1" VerticalAlignment="Center" FontFamily="{StaticResource HelveticaRegular}" FontSize="16" Margin="0,0,5,0">Tag</TextBlock>
+                            
+                        </Grid>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+
+        <Setter Property="Margin" Value="30,0,0,0"></Setter>
+    </Style>
+    
+
+    <!-- Display Tag Styling -->
+    <Style x:Key="DisplayTag" TargetType="{x:Type Button}" BasedOn="{StaticResource BasicTag}">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border BorderBrush="{StaticResource SystemColorNormalBrush}" BorderThickness="2" CornerRadius="10" Background="{StaticResource WhiteBrush}">
+                        <Grid VerticalAlignment="Center" Margin="15,0,15,0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                                <ColumnDefinition Width="1*"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock FontSize="18" FontFamily="{StaticResource HelveticaRegular}" Grid.Column="0" Foreground="#FF375F" Margin="0,0,2,1" VerticalAlignment="Center">#</TextBlock>
+                            <TextBlock Text="{TemplateBinding Content}" FontSize="16" FontFamily="{StaticResource HelveticaRegular}" Grid.Column="1" VerticalAlignment="Center"></TextBlock>
+                        </Grid>
+                        
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+
+    </Style>
+
+
+
+    <!-- More Tags Styling -->
+    <Style x:Key="MoreTags" TargetType="{x:Type Button}" BasedOn="{StaticResource BasicTag}">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Image x:Name="TagImage" Source="pack://application:,,,/Shelly;Component/Resource/Images/System/Forward.png"></Image>
+
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter TargetName="TagImage" Property="Source" Value="pack://application:,,,/Shelly;Component/Resource/Images/System/ForwardHover.png"></Setter>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+
+    </Style>
+
+
+</ResourceDictionary>

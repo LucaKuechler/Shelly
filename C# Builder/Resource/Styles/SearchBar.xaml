@@ -27,13 +27,6 @@
 
     <!-- Overview SearchBar TextBox -->
     <Style x:Key="SearchBarInput" TargetType="{x:Type TextBox}">
-        <Setter Property="Background" Value="Transparent"></Setter>
-        <Setter Property="BorderBrush" Value="{StaticResource DarkGreyLightBrush}"></Setter>
-        <Setter Property="BorderThickness" Value="1,0,0,0"></Setter>
-        <Setter Property="FontFamily" Value="{StaticResource HelveticaRegular}"></Setter>
-        <Setter Property="FontSize" Value="18"></Setter>
-        <Setter Property="VerticalAlignment" Value="Center"></Setter>
-        <Setter Property="Foreground" Value="{StaticResource DarkBlackBrush}"></Setter>
 
         <Setter Property="Template">
             <Setter.Value>
@@ -59,6 +52,14 @@
                 </ControlTemplate>
             </Setter.Value>
         </Setter>
+
+        <Setter Property="Background" Value="Transparent"></Setter>
+        <Setter Property="BorderBrush" Value="{StaticResource DarkGreyLightBrush}"></Setter>
+        <Setter Property="BorderThickness" Value="1,0,0,0"></Setter>
+        <Setter Property="FontFamily" Value="{StaticResource HelveticaRegular}"></Setter>
+        <Setter Property="FontSize" Value="18"></Setter>
+        <Setter Property="VerticalAlignment" Value="Center"></Setter>
+        <Setter Property="Foreground" Value="{StaticResource DarkBlackBrush}"></Setter>
     </Style>
 
 

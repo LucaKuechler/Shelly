@@ -17,6 +17,7 @@
                 <ResourceDictionary Source="Resource/Styles/Colors/SectionColors.xaml"></ResourceDictionary>
                 <ResourceDictionary Source="Resource/Styles/Colors/SystemColors.xaml"></ResourceDictionary>
                 <ResourceDictionary Source="Resource/Styles/Buttons/SystemButtons.xaml"></ResourceDictionary>
+                <ResourceDictionary Source="Resource/Styles/Buttons/TagButton.xaml"></ResourceDictionary>
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>

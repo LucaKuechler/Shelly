@@ -13,12 +13,14 @@
         <Grid>
             <Grid.RowDefinitions>
                 <RowDefinition Height="260"></RowDefinition>
-                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="1*"></RowDefinition>
+                <RowDefinition Height="14"></RowDefinition>
             </Grid.RowDefinitions>
 
-           
-            <StackPanel>
-                
+            
+            <!--#region Upper Half-->
+            <StackPanel Grid.Row="0">
+
                 <!-- Top Bar -->
                 <Grid>
                     <Grid.ColumnDefinitions>
@@ -32,12 +34,12 @@
                     <Button Style="{StaticResource SystemButtonImage}" Margin="0,15,30,0" Grid.Column="2" Height="30" Width="30"></Button>
 
                 </Grid>
-            
+
                 <!-- Header -->
                 <TextBlock Style="{StaticResource WindowTitle}" Margin="45,20,0,0">My Commands</TextBlock>
 
                 <!-- SearchBar -->
-                <Border Style="{StaticResource SearchBarBorder}" Height="40" Margin="45,20,45,0">
+                <Border Style="{StaticResource SearchBarBorder}" Height="35" Margin="45,20,45,0">
                     <Grid>
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="auto"></ColumnDefinition>
@@ -45,14 +47,42 @@
                         </Grid.ColumnDefinitions>
 
                         <Image Style="{StaticResource SearchBarImage}" Grid.Column="0" Height="25" Width="25" Margin="8,0,5,0"></Image>
-                        <TextBox Style="{StaticResource SearchBarInput}" Grid.Column="1" Margin="5,0,0,0" Padding="6"></TextBox>
+                        <TextBox Style="{StaticResource SearchBarInput}" Grid.Column="1" Margin="5,0,0,0" Padding="8,2,2,2"></TextBox>
                     </Grid>
                 </Border>
-                
+
                 <!-- Tag -->
+                <ScrollViewer VerticalScrollBarVisibility="Hidden" HorizontalScrollBarVisibility="Hidden" Margin="45,20,65,0">
+                    <StackPanel x:Name="TagList" Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Center" Width="2000" Height="35">
+                        <Button Style="{StaticResource AddTag}"></Button>
+                        <Button Style="{StaticResource DisplayTag}">ADDddddddd</Button>
+                        <Button Style="{StaticResource MoreTags}"></Button>
+                    </StackPanel>
+                </ScrollViewer>
                 
             </StackPanel>
+            <!--#endregion-->
+            
+            
+            <!--#region Lower Half-->
+            <ScrollViewer Grid.Row="1">
+                <StackPanel x:Name="ObjectList" VerticalAlignment="Top">
 
+                    <!-- Show Objects -->
+
+                </StackPanel>
+            </ScrollViewer>
+            <!--#endregion-->
+            
+            
+            <!--#region Bottom Line-->
+            <Border Grid.Row="2" Background="{StaticResource SystemColorNormalOpacityBrush}">
+                <TextBlock x:Name="Version" FontSize="10" FontFamily="{StaticResource HelveticaRegular}" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,5,0">Version 1.1.0</TextBlock>
+            </Border>
+            <!--#endregion-->
+            
+            
         </Grid>
+        
     </Border>
 </sw:SWWindow>

@@ -131,6 +131,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Resource\Styles\Buttons\TagButton.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="Resource\Styles\Buttons\SystemButtons.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -295,6 +299,10 @@
     <Resource Include="Resource\Images\System\MaxHover.png" />
     <Resource Include="Resource\Images\System\MinHover.png" />
     <Resource Include="Resource\Images\System\RestoreHover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resource\Images\System\Forward.png" />
+    <Resource Include="Resource\Images\System\ForwardHover.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
