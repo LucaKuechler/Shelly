@@ -9,25 +9,50 @@
              Title="Builder" Height="800" Width="1300">
     
     <Border Background="{StaticResource BackgroundLightBrush}">
+        
         <Grid>
             <Grid.RowDefinitions>
                 <RowDefinition Height="260"></RowDefinition>
                 <RowDefinition Height="Auto"></RowDefinition>
             </Grid.RowDefinitions>
 
-            <Grid>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="auto"></ColumnDefinition>
-                    <ColumnDefinition Width="1*"></ColumnDefinition>
-                    <ColumnDefinition Width="auto"></ColumnDefinition>
-                </Grid.ColumnDefinitions>
-
-                <Button Style="{StaticResource SystemButton}" Margin="30,15,0,0" Grid.Column="0">Settings</Button>
-
-                <Button Style="{StaticResource SystemButtonImage}" Margin="0,15,30,0" Grid.Column="2" Height="30" Width="30"></Button>
+           
+            <StackPanel>
                 
-            </Grid>
+                <!-- Top Bar -->
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto"></ColumnDefinition>
+                        <ColumnDefinition Width="1*"></ColumnDefinition>
+                        <ColumnDefinition Width="auto"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+
+                    <Button Style="{StaticResource SystemButton}" Margin="30,15,0,0" Grid.Column="0">Settings</Button>
+
+                    <Button Style="{StaticResource SystemButtonImage}" Margin="0,15,30,0" Grid.Column="2" Height="30" Width="30"></Button>
+
+                </Grid>
             
+                <!-- Header -->
+                <TextBlock Style="{StaticResource WindowTitle}" Margin="45,20,0,0">My Commands</TextBlock>
+
+                <!-- SearchBar -->
+                <Border Style="{StaticResource SearchBarBorder}" Height="40" Margin="45,20,45,0">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="auto"></ColumnDefinition>
+                            <ColumnDefinition Width="1*"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+
+                        <Image Style="{StaticResource SearchBarImage}" Grid.Column="0" Height="25" Width="25" Margin="8,0,5,0"></Image>
+                        <TextBox Style="{StaticResource SearchBarInput}" Grid.Column="1" Margin="5,0,0,0" Padding="6"></TextBox>
+                    </Grid>
+                </Border>
+                
+                <!-- Tag -->
+                
+            </StackPanel>
+
         </Grid>
     </Border>
 </sw:SWWindow>

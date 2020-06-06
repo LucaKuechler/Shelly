@@ -9,6 +9,8 @@
             <ResourceDictionary.MergedDictionaries>
                 <!--Order is Important-->
                 <ResourceDictionary Source="Resource/Styles/Fonts.xaml"></ResourceDictionary>
+                <ResourceDictionary Source="Resource/Styles/Title.xaml"></ResourceDictionary>
+                <ResourceDictionary Source="Resource/Styles/SearchBar.xaml"></ResourceDictionary>
                 <ResourceDictionary Source="pack://application:,,,/SourceWeave.Controls;component/Themes/SWStyles.xaml"/>
                 <ResourceDictionary Source="Resource/Styles/WindowStyles.xaml"/>
                 <ResourceDictionary Source="Resource/Styles/Colors/ObjectColors.xaml"></ResourceDictionary>
