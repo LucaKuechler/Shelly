@@ -60,3 +60,4 @@ Z:\2_GithubRepos\Shelly\C# Builder\obj\Debug\Resource\Styles\Scrollviewer.baml
 Z:\2_GithubRepos\Shelly\C# Builder\obj\Debug\Resource\Styles\Buttons\ObjectButton.baml
 Z:\2_GithubRepos\Shelly\C# Builder\obj\Debug\Resource\Styles\Buttons\WorkSpaceButton.baml
 Z:\2_GithubRepos\Shelly\C# Builder\obj\Debug\Resource\Styles\Buttons\SectionButton.baml
+Z:\2_GithubRepos\Shelly\C# Builder\obj\Debug\Resource\Styles\Buttons\FavoriteButton.baml

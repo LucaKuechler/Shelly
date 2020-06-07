@@ -22,6 +22,7 @@
                 <ResourceDictionary Source="Resource/Styles/Buttons/ObjectButton.xaml"></ResourceDictionary>
                 <ResourceDictionary Source="Resource/Styles/Buttons/WorkSpaceButton.xaml"></ResourceDictionary>
                 <ResourceDictionary Source="Resource/Styles/Buttons/SectionButton.xaml"></ResourceDictionary>
+                <ResourceDictionary Source="Resource/Styles/Buttons/FavoriteButton.xaml"></ResourceDictionary>
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>

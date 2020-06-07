@@ -42,8 +42,12 @@
                     <StackPanel x:Name="SectionList" VerticalAlignment="Top" Height="1000" Orientation="Vertical">
 
                         <!-- Show Objects -->
-                        <Button Style="{StaticResource SectionButton}">Windows</Button>
-                        <Button></Button>
+                        <Button Style="{StaticResource SectionButton}" Background="{StaticResource SectionRedBrush}">Windows</Button>
+                        <Button Style="{StaticResource SectionButton}" Background="{StaticResource SectionBlueBrush}">Programs</Button>
+                        <Button Style="{StaticResource SectionButton}" Background="{StaticResource SectionPurpleBrush}">Password Manager</Button>
+                        <Button Style="{StaticResource SectionButton}" Background="{StaticResource SectionGreenBrush}">Layout</Button>
+                        <Button Style="{StaticResource SectionButton}" Background="{StaticResource SectionYellowBrush}">Web</Button>
+                        <Button Style="{StaticResource SectionButton}" Background="{StaticResource SectionOrangeBrush}">Input</Button>
 
                     </StackPanel>
                 </ScrollViewer>
@@ -52,9 +56,31 @@
             </Grid>
             <!--#endregion-->
 
-
-
             
+            <!--#region Favorites-->
+            <Border BorderBrush="{StaticResource DarkGreyNormalBrush}" BorderThickness="0,0.5,0,0" Grid.Row="1">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="70"></RowDefinition>
+                        <RowDefinition Height="1*"></RowDefinition>
+                    </Grid.RowDefinitions>
+
+                    <TextBlock Grid.Row="0" Margin="25,20,0,0" FontFamily="{StaticResource HelveticaMediumBold}" FontSize="24" Foreground="{StaticResource DarkBlackBrush}">Favorites</TextBlock>
+
+                    <Border Grid.Row="1" BorderBrush="{StaticResource BackgroundDarktBrush}" BorderThickness="0,0.5,0,0" Margin="15,0,0,0">
+                        <StackPanel>
+                            <Button Style="{StaticResource FavoriteButton}">Get asd</Button>
+                            <Button Style="{StaticResource FavoriteButton}">Get asd</Button>
+                            <Button Style="{StaticResource FavoriteButton}">Get asd</Button>
+                            <Button Style="{StaticResource FavoriteButton}">Get asd</Button>
+                            <Button Style="{StaticResource FavoriteButton}">Get asd</Button>
+                        </StackPanel>
+                    </Border>
+                    
+                </Grid>
+            </Border>
+            
+            <!--#endregion-->
             
         </Grid>
     </Border>

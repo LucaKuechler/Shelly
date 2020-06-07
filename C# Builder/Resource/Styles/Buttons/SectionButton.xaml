@@ -16,14 +16,19 @@
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type Button}">
-                    <Border Background="{StaticResource SectionYellowBrush}" CornerRadius="5" Margin="0,10,0,10">
+                    <Border Background="{TemplateBinding Background}" CornerRadius="10" Margin="0,10,0,10">
+
+                        <Border.Effect>
+                            <DropShadowEffect Direction="-100" Color="Black" ShadowDepth="5" Opacity=".1" BlurRadius="5" RenderingBias="Performance"></DropShadowEffect>
+                        </Border.Effect>
+                        
                         <Grid>
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="auto"></ColumnDefinition>
                                 <ColumnDefinition Width="1*"></ColumnDefinition>
                             </Grid.ColumnDefinitions>
 
-                            <Image Grid.Column="0" Source="pack://application:,,,/Shelly;Component/Resource/Images/Command/Sections/Windows.png" Height="40" Margin="5"></Image>
+                            <Image Grid.Column="0" Source="pack://application:,,,/Shelly;Component/Resource/Images/Command/Sections/Windows.png" Height="35" Margin="2"></Image>
                             <TextBlock VerticalAlignment="Center" Grid.Column="1" Text="{TemplateBinding Content}" HorizontalAlignment="Left" FontSize="17" FontFamily="{StaticResource HelveticaMediumBold}" Foreground="{StaticResource WhiteBrush}"></TextBlock>
                         
                         </Grid>
@@ -33,11 +38,11 @@
             </Setter.Value>
         </Setter>
 
-        <Setter Property="BitmapEffect">
+        <!--<Setter Property="Effect">
             <Setter.Value>
-                <DropShadowBitmapEffect Color="Black" Direction="320" Softness="1" ShadowDepth="10" Opacity="0.5"></DropShadowBitmapEffect>
+                <DropShadowEffect Color="Black" ShadowDepth="6" Opacity="0.2"></DropShadowEffect>
             </Setter.Value>
-        </Setter>
+        </Setter>-->
     
     </Style>
 
