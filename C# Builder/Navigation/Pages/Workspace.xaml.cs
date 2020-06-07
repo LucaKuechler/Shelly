@@ -24,5 +24,11 @@ namespace Shelly
         {
             InitializeComponent();
         }
+
+        private void Canel_Click(object sender, RoutedEventArgs e)
+        {
+            Overview main = new Overview();
+            main.Show();
+        }
     }
 }

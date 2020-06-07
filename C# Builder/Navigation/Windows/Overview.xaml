@@ -70,7 +70,7 @@
 
                     <!-- Show Objects -->
                     <Button Height="100" Width="210" Style="{StaticResource AddObject}"></Button>
-                    <Button Height="100" Width="210" Style="{StaticResource DisplayObject}">Hellosssssssssssssssss</Button>
+                    <Button Height="100" Width="210" Style="{StaticResource DisplayObject}" Click="Button_Click">here</Button>
                     <Button Height="100" Width="210" Style="{StaticResource DisplayObject}">Hellosssssssssssssssss</Button>
                     <Button Height="100" Width="210" Style="{StaticResource DisplayObject}">Hellosssssssssssssssss</Button>
                     <Button Height="100" Width="210" Style="{StaticResource DisplayObject}">Hellosssssssssssssssss</Button>

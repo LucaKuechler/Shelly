@@ -24,6 +24,14 @@ namespace Shelly
         public Overview()
         {
             InitializeComponent();
+
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Create createWindow = new Create();
+            createWindow.Show();
+            this.Close();
         }
     }
 }

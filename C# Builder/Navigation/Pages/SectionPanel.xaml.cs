@@ -24,5 +24,35 @@ namespace Shelly
         {
             InitializeComponent();
         }
+
+        private void Windows_Click(object sender, RoutedEventArgs e)
+        {
+            this.NavigationService.Navigate(new WindowsPanel());
+        }
+
+        private void Programs_Click(object sender, RoutedEventArgs e)
+        {
+            this.NavigationService.Navigate(new ProgramsPanel());
+        }
+
+        private void Password_Manager_Click(object sender, RoutedEventArgs e)
+        {
+            this.NavigationService.Navigate(new PasswordManagerPanel());
+        }
+
+        private void Layout_Click(object sender, RoutedEventArgs e)
+        {
+            this.NavigationService.Navigate(new LayoutPanel());
+        }
+
+        private void Web_Click(object sender, RoutedEventArgs e)
+        {
+            this.NavigationService.Navigate(new WebPanel());
+        }
+
+        private void Input_Click(object sender, RoutedEventArgs e)
+        {
+            this.NavigationService.Navigate(new InputsPanel());
+        }
     }
 }

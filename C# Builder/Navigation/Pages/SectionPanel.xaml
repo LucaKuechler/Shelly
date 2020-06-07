@@ -42,12 +42,12 @@
                     <StackPanel x:Name="SectionList" VerticalAlignment="Top" Height="1000" Orientation="Vertical">
 
                         <!-- Show Objects -->
-                        <Button Style="{StaticResource SectionButton}" Background="{StaticResource SectionRedBrush}">Windows</Button>
-                        <Button Style="{StaticResource SectionButton}" Background="{StaticResource SectionBlueBrush}">Programs</Button>
-                        <Button Style="{StaticResource SectionButton}" Background="{StaticResource SectionPurpleBrush}">Password Manager</Button>
-                        <Button Style="{StaticResource SectionButton}" Background="{StaticResource SectionGreenBrush}">Layout</Button>
-                        <Button Style="{StaticResource SectionButton}" Background="{StaticResource SectionYellowBrush}">Web</Button>
-                        <Button Style="{StaticResource SectionButton}" Background="{StaticResource SectionOrangeBrush}">Input</Button>
+                        <Button Style="{StaticResource SectionButton}" Background="{StaticResource SectionRedBrush}" Click="Windows_Click">Windows</Button>
+                        <Button Style="{StaticResource SectionButton}" Background="{StaticResource SectionBlueBrush}" Click="Programs_Click">Programs</Button>
+                        <Button Style="{StaticResource SectionButton}" Background="{StaticResource SectionPurpleBrush}" Click="Password_Manager_Click">Password Manager</Button>
+                        <Button Style="{StaticResource SectionButton}" Background="{StaticResource SectionGreenBrush}" Click="Layout_Click">Layout</Button>
+                        <Button Style="{StaticResource SectionButton}" Background="{StaticResource SectionYellowBrush}" Click="Web_Click">Web</Button>
+                        <Button Style="{StaticResource SectionButton}" Background="{StaticResource SectionOrangeBrush}" Click="Input_Click">Input</Button>
 
                     </StackPanel>
                 </ScrollViewer>
