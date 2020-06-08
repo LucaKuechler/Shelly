@@ -21,8 +21,8 @@
             </Grid.RowDefinitions>
 
 
-            <Frame Grid.Row="0" x:Name="LeftSideFrame" NavigationUIVisibility="Hidden" Grid.Column="0"></Frame>
-            <Frame Grid.Row="0" x:Name="RightSideFrame" NavigationUIVisibility="Hidden" Grid.Column="1"></Frame>
+            <Frame Grid.Row="0" x:Name="LeftSideFrame" NavigationUIVisibility="Hidden" Grid.Column="0" Navigating="Frame_Navigating"></Frame>
+            <Frame Grid.Row="0" x:Name="RightSideFrame" NavigationUIVisibility="Hidden" Grid.Column="1" Navigating="Frame_Navigating"></Frame>
 
 
             <!--#region Bottom Line-->

@@ -21,11 +21,26 @@ namespace Shelly
     /// </summary>
     public partial class Create : SWWindow
     {
-        public Create()
+
+        public Create(Storage Store)
         {
             InitializeComponent();
-            LeftSideFrame.Navigate(new SectionPanel());
-            RightSideFrame.Navigate(new Workspace());
+
+            LeftSideFrame.Navigate(Store.Pages.SectionPage);
+            RightSideFrame.Navigate(Store.Pages.WorkspacePage);
+        }
+
+        private void Frame_Navigating(object sender, NavigatingCancelEventArgs e)
+        {
+            if (e.NavigationMode == NavigationMode.Forward)
+            {
+                e.Cancel = true;
+            }
+            if (e.NavigationMode == NavigationMode.Back)
+            {
+                e.Cancel = true;
+            }
+            else { }
         }
     }
 }

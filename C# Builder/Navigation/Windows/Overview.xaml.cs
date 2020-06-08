@@ -21,17 +21,15 @@ namespace Shelly
     /// </summary>
     public partial class Overview : SWWindow
     {
+        Storage Store;
+
         public Overview()
         {
             InitializeComponent();
 
-        }
+            Store = new Storage(this);
 
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            Create createWindow = new Create();
-            createWindow.Show();
-            this.Close();
+            this.DataContext = new OverviewData(Store);
         }
     }
 }

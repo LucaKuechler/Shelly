@@ -20,15 +20,10 @@ namespace Shelly
     /// </summary>
     public partial class Workspace : Page
     {
-        public Workspace()
+        public Workspace(Storage Store)
         {
             InitializeComponent();
-        }
-
-        private void Canel_Click(object sender, RoutedEventArgs e)
-        {
-            Overview main = new Overview();
-            main.Show();
+            this.DataContext = new WorkspaceData(Store);
         }
     }
 }

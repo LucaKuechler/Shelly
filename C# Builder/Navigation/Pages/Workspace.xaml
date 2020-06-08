@@ -26,7 +26,7 @@
                         <ColumnDefinition Width="auto"></ColumnDefinition>
                     </Grid.ColumnDefinitions>
 
-                    <Button Style="{StaticResource SystemButton}" Margin="30,15,0,0" Grid.Column="0" Click="Canel_Click">Cancel</Button>
+                    <Button Style="{StaticResource SystemButton}" Margin="30,15,0,0" Grid.Column="0" Command="{Binding CancelFunction}">Cancel</Button>
 
                     <Button Style="{StaticResource SystemButton}" Margin="0,15,30,0" Grid.Column="1" HorizontalAlignment="Right">Next</Button>
 

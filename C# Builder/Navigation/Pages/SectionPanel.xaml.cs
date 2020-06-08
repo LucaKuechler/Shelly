@@ -20,39 +20,42 @@ namespace Shelly
     /// </summary>
     public partial class SectionPanel : Page
     {
-        public SectionPanel()
+        Storage Store;
+
+        public SectionPanel(Storage Store)
         {
             InitializeComponent();
+            this.Store = Store;
         }
 
         private void Windows_Click(object sender, RoutedEventArgs e)
         {
-            this.NavigationService.Navigate(new WindowsPanel());
+            Store.Pages.GoToPage(Store.Pages.WindowsPage);
         }
 
         private void Programs_Click(object sender, RoutedEventArgs e)
         {
-            this.NavigationService.Navigate(new ProgramsPanel());
+            Store.Pages.GoToPage(Store.Pages.ProgramsPage);
         }
 
         private void Password_Manager_Click(object sender, RoutedEventArgs e)
         {
-            this.NavigationService.Navigate(new PasswordManagerPanel());
+            Store.Pages.GoToPage(Store.Pages.PasswordManagerPage);
         }
 
         private void Layout_Click(object sender, RoutedEventArgs e)
         {
-            this.NavigationService.Navigate(new LayoutPanel());
+            Store.Pages.GoToPage(Store.Pages.LayoutPage);
         }
 
         private void Web_Click(object sender, RoutedEventArgs e)
         {
-            this.NavigationService.Navigate(new WebPanel());
+            Store.Pages.GoToPage(Store.Pages.WebPage);
         }
 
         private void Input_Click(object sender, RoutedEventArgs e)
         {
-            this.NavigationService.Navigate(new InputsPanel());
+            Store.Pages.GoToPage(Store.Pages.InputPage);
         }
     }
 }

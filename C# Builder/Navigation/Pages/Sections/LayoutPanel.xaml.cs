@@ -20,14 +20,11 @@ namespace Shelly
     /// </summary>
     public partial class LayoutPanel : Page
     {
-        public LayoutPanel()
+        public LayoutPanel(Storage Store)
         {
             InitializeComponent();
+            this.DataContext = Store.DataBinding;
         }
 
-        private void Back_Click(object sender, RoutedEventArgs e)
-        {
-            this.NavigationService.Navigate(new SectionPanel());
-        }
     }
 }

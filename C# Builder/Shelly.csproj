@@ -195,6 +195,14 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="BackEnd\PageRegistry\PageRegistry.cs" />
+    <Compile Include="BackEnd\Storage\Storage.cs" />
+    <Compile Include="Commands\Pages\Section\Functions\BackToSection.cs" />
+    <Compile Include="Commands\Pages\Section\SectionData.cs" />
+    <Compile Include="Commands\Pages\Workspace\Functions\Cancel.cs" />
+    <Compile Include="Commands\Pages\Workspace\WorkspaceData.cs" />
+    <Compile Include="Commands\Windows\OverviewDataContext\Functions\CreateCommand.cs" />
+    <Compile Include="Commands\Windows\OverviewDataContext\OverviewData.cs" />
     <Compile Include="Navigation\Pages\Sections\PasswordManagerPanel.xaml.cs">
       <DependentUpon>PasswordManagerPanel.xaml</DependentUpon>
     </Compile>
@@ -265,8 +273,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="BackEnd\" />
-    <Folder Include="Commands\" />
     <Folder Include="Navigation\Pages\Sections\Programs\" />
     <Folder Include="Navigation\PopUps\" />
   </ItemGroup>

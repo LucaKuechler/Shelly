@@ -31,7 +31,7 @@
 
                     <Button Style="{StaticResource SystemButton}" Margin="30,15,0,0" Grid.Column="0">Settings</Button>
 
-                    <Button Style="{StaticResource SystemButtonImage}" Margin="0,15,30,0" Grid.Column="2" Height="30" Width="30"></Button>
+                    <Button Style="{StaticResource SystemButtonImage}" Margin="0,15,30,0" Grid.Column="2" Height="30" Width="30" Command="{Binding CreateCommandFunction}"></Button>
 
                 </Grid>
 
@@ -69,8 +69,8 @@
                 <WrapPanel x:Name="ObjectList" VerticalAlignment="Top" HorizontalAlignment="Left" Height="1000">
 
                     <!-- Show Objects -->
-                    <Button Height="100" Width="210" Style="{StaticResource AddObject}"></Button>
-                    <Button Height="100" Width="210" Style="{StaticResource DisplayObject}" Click="Button_Click">here</Button>
+                    <Button Height="100" Width="210" Style="{StaticResource AddObject}" Command="{Binding CreateCommandFunction}"></Button>
+                    <Button Height="100" Width="210" Style="{StaticResource DisplayObject}">here</Button>
                     <Button Height="100" Width="210" Style="{StaticResource DisplayObject}">Hellosssssssssssssssss</Button>
                     <Button Height="100" Width="210" Style="{StaticResource DisplayObject}">Hellosssssssssssssssss</Button>
                     <Button Height="100" Width="210" Style="{StaticResource DisplayObject}">Hellosssssssssssssssss</Button>

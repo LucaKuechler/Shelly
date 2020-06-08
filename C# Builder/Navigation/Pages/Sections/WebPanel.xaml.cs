@@ -20,14 +20,11 @@ namespace Shelly
     /// </summary>
     public partial class WebPanel : Page
     {
-        public WebPanel()
+        public WebPanel(Storage Store)
         {
             InitializeComponent();
+            this.DataContext = Store.DataBinding;
         }
 
-        private void Back_Click(object sender, RoutedEventArgs e)
-        {
-            this.NavigationService.Navigate(new SectionPanel());
-        }
     }
 }
