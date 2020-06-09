@@ -110,6 +110,7 @@
     <!--#endregion-->
     
 
+    <!-- Base Window -->
     <Style TargetType="local:SWWindow" x:Key="SWWindowStyle">
         <Setter Property="Background" Value="#F2F2F7"/>
         <Setter Property="BorderBrush" Value="Black"/>
@@ -177,6 +178,85 @@
                                     <Button x:Name="RestoreButton" Style="{StaticResource RestoreHover}" Visibility="Collapsed" Grid.Column="1"></Button>
 
                                     <Button x:Name="CloseButton" Style="{StaticResource CloseHover}" Grid.Column="2"></Button>
+                                </Grid>
+                            </Grid>
+
+                            <Grid x:Name="PART_MainContentGrid"
+                                  Grid.Row="1"
+                                  Panel.ZIndex="10">
+                                <ContentPresenter x:Name="PART_MainContentPresenter" Grid.Row="1"/>
+                            </Grid>
+                        </Grid>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    
+    
+    <!-- PopUps -->
+    <Style TargetType="local:SWWindow" x:Key="SWPopUpStyle">
+        <Setter Property="Background" Value="#F2F2F7"/>
+        <Setter Property="BorderBrush" Value="Black"/>
+        <Setter Property="MinHeight" Value="320"/>
+        <Setter Property="MinWidth" Value="100"/>
+        <Setter Property="RenderOptions.BitmapScalingMode" Value="HighQuality"/>
+        <Setter Property="Title" Value="{Binding Title}"/>
+        <Setter Property="WindowChrome.WindowChrome">
+            <Setter.Value>
+                <WindowChrome GlassFrameThickness="1" 
+                              ResizeBorderThickness="4"
+                              CaptionHeight="0"/>
+            </Setter.Value>
+        </Setter>
+
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type local:SWWindow}">
+
+                    <Grid Background="Transparent" x:Name="WindowRoot">
+
+                        <Grid x:Name="LayoutRoot"
+                              Background="{TemplateBinding Background}">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="30"/>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+
+                            <!--TitleBar-->
+                            <Grid x:Name="PART_HeaderBar" Background="#E5E5EA">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <!--Icon-->
+                                    <ColumnDefinition Width="*"/>
+                                    <!--Title-->
+                                    <ColumnDefinition Width="Auto"/>
+                                    <!--Button-->
+
+                                </Grid.ColumnDefinitions>
+
+                                <Image Grid.Column="0" Source="pack://application:,,,/Shelly;Component/Resource/Images/System/Logo.png" Margin="6"></Image>
+
+                                <TextBlock Text="{TemplateBinding Title}" 
+                                           Grid.Column="1"
+                                           Grid.ColumnSpan="2"
+                                           TextTrimming="CharacterEllipsis"
+                                           HorizontalAlignment="Left" 
+                                           FontSize="12"
+                                           TextAlignment="Center"
+                                           VerticalAlignment="Center"
+                                           Width="Auto"
+                                           Margin="2,0,0,0"
+                                           Foreground="#0A84FF"
+                                           Panel.ZIndex="0"
+                                           IsEnabled="{TemplateBinding IsActive}"/>
+
+                                <Grid x:Name="WindowControlsGrid" Grid.Column="2" Background="#E5E5EA">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="36"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <Button x:Name="CloseButton" Style="{StaticResource CloseHover}" Grid.Column="1"></Button>
                                 </Grid>
                             </Grid>
 

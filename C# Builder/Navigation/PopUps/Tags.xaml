@@ -1,0 +1,54 @@
+﻿<sw:SWWindow x:Class="Shelly.Tags"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:sw="clr-namespace:SourceWeave.Controls;assembly=SourceWeave.Controls"
+             xmlns:local="clr-namespace:Shelly"
+             mc:Ignorable="d"
+             Title="Details" Height="500" Width="300">
+
+    <Border>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40"></RowDefinition>
+                <RowDefinition Height="1*"></RowDefinition>
+            </Grid.RowDefinitions>
+
+            <Button Grid.Row="0" Margin="0,15,35,0" Style="{StaticResource SystemButton}" HorizontalAlignment="Right" FontSize="17">Done</Button>
+
+
+            <StackPanel Grid.Row="1">
+
+                <!-- SearchBar -->
+                <Border Style="{StaticResource SearchBarBorder}" Height="auto" Margin="15,20,15,0">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="auto"></ColumnDefinition>
+                            <ColumnDefinition Width="1*"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+
+                        <Image Style="{StaticResource SearchBarImage}" Grid.Column="0" Height="15" Width="15" Margin="8,5,5,5"></Image>
+                        <TextBox Style="{StaticResource SearchBarInput}" Grid.Column="1" Margin="5,0,0,0" Padding="8,2,2,0" FontSize="14" FontFamily="null"></TextBox>
+                    </Grid>
+                </Border>
+
+                <ScrollViewer Margin="30,20,20,20">
+                    <StackPanel x:Name="TagDetailsList" VerticalAlignment="Top" HorizontalAlignment="Left" Height="1000">
+
+                        <!-- Show Objects -->
+                        <CheckBox Style="{StaticResource CheckBox}">Hello</CheckBox>
+                        <CheckBox Style="{StaticResource CheckBox}">Hello</CheckBox>
+                        <CheckBox Style="{StaticResource CheckBox}">Hello</CheckBox>
+                        <CheckBox Style="{StaticResource CheckBox}">Hello</CheckBox>
+                        <CheckBox Style="{StaticResource CheckBox}">Hello</CheckBox>
+                        <Button Style="{StaticResource AddTagTags}">ADD</Button>
+
+                    </StackPanel>
+                </ScrollViewer>
+            </StackPanel>
+            
+            
+        </Grid>
+    </Border>
+</sw:SWWindow>

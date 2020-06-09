@@ -127,6 +127,14 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Navigation\PopUps\Tags.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Navigation\PopUps\Details.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Navigation\Windows\Overview.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -171,11 +179,19 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="Resource\Styles\Checkbox.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="Resource\Styles\Scrollviewer.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Resource\Styles\SearchBar.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resource\Styles\TextBox.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -227,6 +243,12 @@
     <Compile Include="Navigation\Pages\SectionPanel.xaml.cs">
       <DependentUpon>SectionPanel.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Navigation\PopUps\Tags.xaml.cs">
+      <DependentUpon>Tags.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Navigation\PopUps\Details.xaml.cs">
+      <DependentUpon>Details.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Navigation\Windows\Create.xaml.cs">
       <DependentUpon>Create.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -274,7 +296,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Navigation\Pages\Sections\Programs\" />
-    <Folder Include="Navigation\PopUps\" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="logo.ico" />

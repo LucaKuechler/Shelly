@@ -9,7 +9,9 @@
         <ResourceDictionary Source="../Colors/SystemColors.xaml"></ResourceDictionary>
     </ResourceDictionary.MergedDictionaries>
 
-
+    <!--#region Overview -->
+    
+    
     <!-- Basic Tag Styling -->
     <Style x:Key="BasicTag" TargetType="{x:Type Button}" BasedOn="{StaticResource hoverless}">
         <Setter Property="Foreground" Value="{StaticResource DarkBlackBrush}"></Setter>
@@ -83,6 +85,100 @@
         </Setter>
 
     </Style>
+    
+    
+    <!--#endregion-->
+    
+    
+    <!--#region Details -->
 
+
+    <!-- Basic Tag Styling -->
+    <Style x:Key="BasicTagDetails" TargetType="{x:Type Button}" BasedOn="{StaticResource hoverless}">
+        <Setter Property="Foreground" Value="{StaticResource DarkBlackBrush}"></Setter>
+        <Setter Property="Margin" Value="10,0,0,0"></Setter>
+    </Style>
+
+
+    <!-- Add Tag Styling -->
+    <Style x:Key="AddTagDetails" TargetType="{x:Type Button}" BasedOn="{StaticResource BasicTagDetails}">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border BorderBrush="{StaticResource DarkBlackBrush}" BorderThickness="1" CornerRadius="10" Background="{StaticResource WhiteBrush}">
+
+                        <Border.Effect>
+                            <DropShadowEffect Direction="-100" Color="Black" ShadowDepth="5" Opacity=".05" BlurRadius="5" RenderingBias="Performance"></DropShadowEffect>
+                        </Border.Effect>
+
+                        <Grid Margin="20,2,20,2">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="auto"></ColumnDefinition>
+                                <ColumnDefinition Width="1*"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+
+                            <Image Margin="0,0,5,0" Grid.Column="0" Height="17" Width="17" Source="pack://application:,,,/Shelly;Component/Resource/Images/System/PlusTag.png"></Image>
+                            <TextBlock Grid.Column="1" VerticalAlignment="Center" FontFamily="{StaticResource HelveticaRegular}" FontSize="16" Margin="0,0,5,0">Tag</TextBlock>
+
+                        </Grid>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+
+        <Setter Property="Foreground" Value="{StaticResource SystemColorNormalBrush}"></Setter>
+        <Setter Property="Margin" Value="0,0,0,0"></Setter>
+    </Style>
+
+
+
+    <!-- Display Tag Styling -->
+    <Style x:Key="DisplayTagDetails" TargetType="{x:Type Button}" BasedOn="{StaticResource BasicTagDetails}">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border BorderBrush="{StaticResource DarkBlackBrush}" BorderThickness="1" CornerRadius="10" Background="{StaticResource WhiteBrush}">
+
+                        <Border.Effect>
+                            <DropShadowEffect Direction="-100" Color="Black" ShadowDepth="5" Opacity=".05" BlurRadius="5" RenderingBias="Performance"></DropShadowEffect>
+                        </Border.Effect>
+
+                        <Grid VerticalAlignment="Center" Margin="20,2,20,2">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                                <ColumnDefinition Width="1*"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+                            
+                            <TextBlock FontSize="18" FontFamily="{StaticResource HelveticaRegular}" Grid.Column="0" Foreground="#FF375F" Margin="0,0,2,1" VerticalAlignment="Center">#</TextBlock>
+                            <TextBlock Text="{TemplateBinding Content}" FontSize="16" FontFamily="{StaticResource HelveticaRegular}" Grid.Column="1" VerticalAlignment="Center"></TextBlock>
+                        </Grid>
+
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+
+        <Setter Property="Foreground" Value="{StaticResource SystemColorNormalBrush}"></Setter>
+    </Style>
+
+    <!--#endregion-->
+    
+    
+    <!--#region Tags-->
+    <Style x:Key="AddTagTags" TargetType="{x:Type Button}" BasedOn="{StaticResource hoverless}">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border Padding="5" Width="60" Background="{StaticResource WhiteBrush}" BorderBrush="{StaticResource SystemColorNormalBrush}" BorderThickness="1.5" CornerRadius="5">
+                        <TextBlock TextAlignment="Center" FontSize="16" Foreground="{StaticResource SystemColorNormalBrush}">Add</TextBlock>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+
+        <Setter Property="Margin" Value="0,5,0,0"></Setter>
+        <Setter Property="HorizontalAlignment" Value="Left"></Setter>
+    </Style>
+    <!--#endregion-->
 
 </ResourceDictionary>

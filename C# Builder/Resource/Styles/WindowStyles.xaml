@@ -5,5 +5,7 @@
 
     <Style TargetType="local:Create" BasedOn="{StaticResource SWWindowStyle}"/>
     <Style TargetType="local:Overview" BasedOn="{StaticResource SWWindowStyle}"/>
+    <Style TargetType="local:Details" BasedOn="{StaticResource SWPopUpStyle}"/>
+    <Style TargetType="local:Tags" BasedOn="{StaticResource SWPopUpStyle}"/>
 
 </ResourceDictionary>
