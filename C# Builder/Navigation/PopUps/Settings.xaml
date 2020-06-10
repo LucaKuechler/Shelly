@@ -1,0 +1,73 @@
+﻿<sw:SWWindow x:Class="Shelly.Settings"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:sw="clr-namespace:SourceWeave.Controls;assembly=SourceWeave.Controls"
+             xmlns:local="clr-namespace:Shelly"
+             mc:Ignorable="d"
+             Title="Settings" Height="400" Width="800">
+
+    <Border Background="{StaticResource BackgroundLightBrush}">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="1*"></RowDefinition>
+            </Grid.RowDefinitions>
+
+            <Button Grid.Row="0" Style="{StaticResource SystemButton}" HorizontalAlignment="Right" Margin="0,15,35,0">Done</Button>
+
+            <Grid Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="auto"></ColumnDefinition>
+                    <ColumnDefinition Width="1*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+                <Image Grid.Column="0" Margin="40,0,0,0" Height="60" Source="pack://application:,,,/Shelly;Component/Resource/Images/System/Settings.png"></Image>
+                <TextBlock  Margin="10,0,0,0" VerticalAlignment="Center" Grid.Column="1" FontSize="30">Settings</TextBlock>
+            </Grid>
+
+
+            <StackPanel Grid.Row="2" Margin="30,30,30,0">
+                <TextBlock>Shell</TextBlock>
+                <Grid Margin="0,0,0,20">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*"></ColumnDefinition>
+                        <ColumnDefinition Width="auto"></ColumnDefinition>
+                        <ColumnDefinition Width="auto"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+
+                    <TextBox VerticalAlignment="Center" Padding="5" Grid.Column="0"></TextBox>
+                    
+                    <Button Grid.Column="1" Style="{StaticResource hoverless}" Margin="10,0,0,0">
+                        <Image Height="32" Source="pack://application:,,,/Shelly;Component/Resource/Images/System/Folder.png"></Image>
+                    </Button>
+
+                    <Image Margin="10,0,0,0" Grid.Column="2" Height="32" Source="pack://application:,,,/Shelly;Component/Resource/Images/System/Works.png"></Image>
+
+                </Grid>
+
+
+                <TextBlock>Password Manager</TextBlock>
+                <Grid Margin="0,0,0,20">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*"></ColumnDefinition>
+                        <ColumnDefinition Width="auto"></ColumnDefinition>
+                        <ColumnDefinition Width="auto"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+
+                    <TextBox Grid.Column="0" VerticalAlignment="Center" Padding="5"></TextBox>
+
+                    <Button Grid.Column="1" Style="{StaticResource hoverless}" Margin="10,0,0,0">
+                        <Image Height="32" Source="pack://application:,,,/Shelly;Component/Resource/Images/System/Folder.png"></Image>
+                    </Button>
+
+                    <Image Margin="10,0,0,0" Grid.Column="2" Height="32" Source="pack://application:,,,/Shelly;Component/Resource/Images/System/Broken.png"></Image>
+
+                </Grid>
+
+            </StackPanel>
+        </Grid>
+    </Border>
+</sw:SWWindow>

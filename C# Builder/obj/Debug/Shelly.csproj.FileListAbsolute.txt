@@ -68,3 +68,5 @@ Z:\2_GithubRepos\Shelly\C# Builder\obj\Debug\Resource\Styles\TextBox.baml
 Z:\2_GithubRepos\Shelly\C# Builder\obj\Debug\Navigation\PopUps\Tags.g.cs
 Z:\2_GithubRepos\Shelly\C# Builder\obj\Debug\Navigation\PopUps\Tags.baml
 Z:\2_GithubRepos\Shelly\C# Builder\obj\Debug\Resource\Styles\Checkbox.baml
+Z:\2_GithubRepos\Shelly\C# Builder\obj\Debug\Navigation\PopUps\Settings.g.cs
+Z:\2_GithubRepos\Shelly\C# Builder\obj\Debug\Navigation\PopUps\Settings.baml

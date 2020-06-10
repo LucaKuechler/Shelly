@@ -8,14 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resource/images/command/programs/opera.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resource/images/command/programs/operaauto.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resource/images/command/programs/passwordmanager.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resource/images/command/sections/input.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resource/images/command/sections/layout.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resource/images/command/sections/passwordmanager.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resource/images/command/sections/programs.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resource/images/command/sections/web.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resource/images/command/sections/windows.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resource/images/system/broken.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resource/images/system/works.png")]
 
 
