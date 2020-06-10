@@ -8,7 +8,23 @@
         <ResourceDictionary Source="Fonts.xaml"></ResourceDictionary>
         <ResourceDictionary Source="Colors/SystemColors.xaml"></ResourceDictionary>
     </ResourceDictionary.MergedDictionaries>
-   
+
+    
+    <!-- Reset Styling -->
+    <Style TargetType="{x:Type Button}" x:Key="hoverless">
+        <Setter Property="Background" Value="Transparent"></Setter>
+        <Setter Property="BorderThickness" Value="0"></Setter>
+
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border Padding="{TemplateBinding Padding}" Background="{TemplateBinding Background}">
+                        <ContentPresenter VerticalAlignment="Center" HorizontalAlignment="Center"></ContentPresenter>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
     
 
     <!-- Detail input -->
@@ -48,6 +64,14 @@
         <Setter Property="AcceptsReturn" Value="False"></Setter>
         <Setter Property="Height" Value="30"></Setter>
     </Style>
+
+
+    <!--#endregion-->
+
+
+
+
+    
 
 
     <!--#endregion-->

@@ -8,6 +8,60 @@
              mc:Ignorable="d"
              Title="Details" Height="500" Width="300">
 
+    <Window.Resources>
+        <Style x:Key="InputTag" TargetType="{x:Type TextBox}">
+
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type TextBox}">
+
+                        <Border x:Name="border" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Background="{TemplateBinding Background}" SnapsToDevicePixels="True" CornerRadius="5">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="1*"></ColumnDefinition>
+                                    <ColumnDefinition Width="auto"></ColumnDefinition>
+                                </Grid.ColumnDefinitions>
+
+                                <ScrollViewer Grid.Column="0" VerticalAlignment="Center" x:Name="PART_ContentHost" Focusable="false" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Hidden"/>
+
+                                <Button Grid.Column="1" Background="Transparent" BorderThickness="0" Style="{StaticResource hoverless}" Click="asd">
+                                    <Image Source="pack://application:,,,/Shelly;Component/Resource/Images/System/Plus.png" Margin="2"></Image>
+                                </Button>
+                            </Grid>
+
+                        </Border>
+
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsEnabled" Value="false">
+                                <Setter Property="Opacity" TargetName="border" Value="0.56"/>
+                            </Trigger>
+
+                            <Trigger Property="IsMouseOver" Value="true">
+                                <Setter Property="BorderBrush" TargetName="border" Value="{StaticResource SystemColorNormalBrush}"/>
+                            </Trigger>
+
+                            <Trigger Property="IsFocused" Value="true">
+                                <Setter Property="BorderBrush" TargetName="border" Value="{StaticResource SystemColorNormalBrush}"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+
+            <Setter Property="Background" Value="{StaticResource WhiteBrush}"></Setter>
+            <Setter Property="BorderBrush" Value="{StaticResource SystemColorNormalBrush}"></Setter>
+            <Setter Property="BorderThickness" Value="1.5"></Setter>
+            <Setter Property="FontSize" Value="12"></Setter>
+            <Setter Property="Height" Value="32"></Setter>
+            <Setter Property="VerticalAlignment" Value="Center"></Setter>
+            <Setter Property="Padding" Value="8,0,5,0"></Setter>
+            <Setter Property="Margin" Value="0,10,0,0"></Setter>
+            <Setter Property="Foreground" Value="{StaticResource DarkBlackBrush}"></Setter>
+
+        </Style>
+    </Window.Resources>
+
+    
     <Border>
         <Grid>
             <Grid.RowDefinitions>
@@ -43,6 +97,7 @@
                         <CheckBox Style="{StaticResource CheckBox}">Hello</CheckBox>
                         <CheckBox Style="{StaticResource CheckBox}">Hello</CheckBox>
                         <Button Style="{StaticResource AddTagTags}">ADD</Button>
+                        <TextBox Style="{StaticResource InputTag}"></TextBox>
 
                     </StackPanel>
                 </ScrollViewer>

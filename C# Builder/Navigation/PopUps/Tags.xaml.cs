@@ -24,5 +24,10 @@ namespace Shelly
         {
             InitializeComponent();
         }
+
+        private void asd(object sender, RoutedEventArgs e)
+        {
+            System.Diagnostics.Trace.WriteLine("asd");
+        }
     }
 }
