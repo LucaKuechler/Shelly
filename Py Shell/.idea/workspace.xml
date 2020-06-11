@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="26631c16-0f94-42d0-b5a7-004326b0f7e7" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1d8xZm7MWcdgawAgXjqgmNOtNJG" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../1_Code/Python Test" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="26631c16-0f94-42d0-b5a7-004326b0f7e7" name="Default Changelist" comment="" />
+      <created>1591820578414</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1591820578414</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="479" y="205" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1591820614087">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="479" y="205" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2048.1112@0.0.2048.1112" timestamp="1591820614087" />
+    <state x="805" y="305" key="FileChooserDialogImpl" timestamp="1591820648870">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="805" y="305" key="FileChooserDialogImpl/0.0.2048.1112@0.0.2048.1112" timestamp="1591820648870" />
+  </component>
+</project>

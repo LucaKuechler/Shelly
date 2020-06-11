@@ -22,6 +22,7 @@ namespace Shelly
         public WebPanel WebPage { get; private set; }
         public WindowsPanel WindowsPage { get; private set; }
 
+
         public PageRegistry(Storage Store)
         {
             // all pages are created here
