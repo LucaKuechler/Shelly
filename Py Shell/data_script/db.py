@@ -4,24 +4,29 @@ import os
 
 
 class Database():
+    path = ""
     def __init__(self):
         #cur_dir = os.path.dirname(os.path.realpath(__file__))
         #self.cur_dir = cur_dir + "\\command.db"
         pass
 
-    def commit(self):
-        self.connection.commit()
+
+    @classmethod
+    def commit(cls):
+        cls.connection.commit()
 
 
-    def close(self):
-        self.connection.close()
+    @classmethod
+    def close(cls):
+        cls.connection.close()
 
 
-    def create(self):       
-            self.connection = sqlite3.connect(self.path)
+    @classmethod
+    def create(cls):       
+            cls.connection = sqlite3.connect(cls.path)
             print("file created")
 
-            query = connection.cursor()
+            query = cls.connection.cursor()
             
             query.execute('''CREATE TABLE commands (
                 ID integer PRIMARY KEY AUTOINCREMENT,
@@ -37,28 +42,28 @@ class Database():
             ScriptStructure text NOT NULL
             )''')
 
-            self.commit()
-            self.close()
+            cls.commit()
+            cls.close()
 
 
-    def get_string(self):
-        print(self.path)
-        if os.path.exists(self.path) == False:
-            self.create()
+    @classmethod
+    def get_string(cls):
+        if cls.path == "":
+            path = os.path.dirname(os.path.realpath(__file__))
+            cls.path = path + "\\command.db"
+
+        if os.path.exists(cls.path) == False:
+            cls.create()
         else:
-            self.connection = sqlite3.connect(self.path)
+            cls.connection = sqlite3.connect(cls.path)
 
         print("Done")
-        return self.connection
+        return cls.connection
 
 
-    def set_path(self, path):
-        print(path)
-        self.path = path
-        print(self.path)
-        self.get_string()
-
-
+    @classmethod
+    def set_path(cls, path):
+        cls.path = path
 
 
 

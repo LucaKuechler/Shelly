@@ -3,6 +3,7 @@ import shell
 import time
 import os
 from data_script import db
+from data_script import data_list
 #import CommandList
 #import ScriptList
 
@@ -12,10 +13,11 @@ class Program(shell.Shell):
     ''' system function '''
 
     def main(self, list_input):
-        path = os.path.dirname(os.path.realpath(__file__))
-        path = path + "\\data_script\\command.db"
-        db.Database().set_path(path)
-        print(db.Database().get_string()) 
+        # path = os.path.dirname(os.path.realpath(__file__))
+        # path = path + "\\data_script\\command.db"
+        # db.Database().set_path(path)
+        data_list.db_command_list().get_sections()
+        #pass
 
 
 #region Main Loop
