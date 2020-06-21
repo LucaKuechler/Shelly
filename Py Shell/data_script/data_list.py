@@ -16,54 +16,58 @@ class db_command_list():
                 self.path = os.path.abspath(self.path + "\\..\\") 
 
             self.path += "\\Functions"
-
-
-    @staticmethod
-    def check_folder(cur_folder_items):
-        ''' Checks if current folder contains a child folder '''
-        counter = 0
-
-        for i in cur_folder_items:
-            if "." not in i:
-                counter += 1
-        return counter
         
 
     @staticmethod
-    def get_items(path):
-        return os.listdir(path)
+    def get_files(path):
+        ''' return only the files '''
+        items = os.listdir(path)
+        files = []
+        for i in items:
+            if "." in i:
+                files.append(i)
+        return files
 
 
-    def get_sections(self):
+    @staticmethod
+    def create_section_attributes(path):
+        li = []
+        test = ""
+        path_li = path.split("\\")
+        counter = len(path_li) - 1
+        li.append(path_li[counter])
+
+        cur_index = path_li.index("Functions")
+        for d in path_li range(cur_index,len(path), 1)):
+            test += ">" + d
+
+
+    @staticmethod
+    def get_sections(path):
+        ''' get one path and check for child folders '''
+
+        files = db_command_list.get_files(path)
+        class_file = []
+        class_path_list = db_command_list.create_section_attributes(path)
+
+        for f in files:
+            class_file.append(f)
+            class_file.append(path)
+        return files
+
+        ''' Command-Name | Path | Section-Name | File-List '''
+
+
+    def loop_sections(self):
         path = self.path
         main_folders = [x[0] for x in os.walk(path)] 
         main_folders.pop(0)
+        items = []
 
-        counter = 0
         for p in main_folders:
-            items = db_command_list.get_items(p)
-            value = db_command_list.check_folder(items)
-            if not value > 0:
-                self.command_files += items
-            else:
-                print(value)
-            
-        print(self.command_files)
-
-        #sub_sub_folder = []
-        # counter = 0
-
-        # for p in sub_folders: 
-        #     sub_sub_folder.append(os.listdir(p)) #child folder with files
-        #     if sub_sub_folder[counter] != []:
-        #         for li in sub_sub_folder[counter]: # all sub files
-        #             if "." not in li: #if folder do ...
-        #                 print("folder")
-        #     counter += 1
-
-        #     #for pp in sub_sub_folder:
-
-        ''' Command-Name | Path | Section-Name | File-List '''
+            asd = db_command_list.get_sections(p)
+            items += asd 
+        print(items)
 
 
     def set_path(self, path):
@@ -71,7 +75,6 @@ class db_command_list():
         #get_files()
 
     
-
 
     #all files = commands[1.File[Name | Section | Path]]
     

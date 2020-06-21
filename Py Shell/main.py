@@ -16,7 +16,7 @@ class Program(shell.Shell):
         # path = os.path.dirname(os.path.realpath(__file__))
         # path = path + "\\data_script\\command.db"
         # db.Database().set_path(path)
-        data_list.db_command_list().get_sections()
+        data_list.db_command_list().loop_sections()
         #pass
 
 
