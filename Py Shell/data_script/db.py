@@ -32,7 +32,8 @@ class Database():
                 ID integer PRIMARY KEY AUTOINCREMENT,
                 Real_ID integer NOT NULL,
                 FileName text NOT NULL,
-                Section Not Null
+                Section Not Null,
+                Path text Not Null,
             )''')
 
             query.execute('''CREATE TABLE scripts (

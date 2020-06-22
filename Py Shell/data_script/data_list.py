@@ -4,8 +4,6 @@ import os
 
 class db_command_list():
     def __init__(self):
-        self.section_name = []
-        self.command_files = []
         self.path = os.path.dirname(os.path.realpath(__file__))
         control_path = "Functions"
         home_path = "data_script"
@@ -18,9 +16,10 @@ class db_command_list():
             self.path += "\\Functions"
         
 
+    #region staticmethods
     @staticmethod
     def get_files(path):
-        ''' return only the files '''
+        ''' returns all files that are listed inside the path folder '''
         items = os.listdir(path)
         files = []
         for i in items:
@@ -30,53 +29,56 @@ class db_command_list():
 
 
     @staticmethod
-    def create_section_attributes(path):
-        li = []
-        test = ""
+    def get_section_name(path):
+        ''' take the whole path and return only the last element because 
+            this must be the parent folder for the selected file 
+        '''
+
         path_li = path.split("\\")
         counter = len(path_li) - 1
-        li.append(path_li[counter])
-
-        cur_index = path_li.index("Functions")
-        for d in path_li range(cur_index,len(path), 1)):
-            test += ">" + d
+        li = path_li[counter]
+        return li
 
 
     @staticmethod
     def get_sections(path):
-        ''' get one path and check for child folders '''
+        ''' Get a path from a folder and call get_files() -> to get the files inside, 
+            aswell as call get_section_name() -> to get the section name.
+            Then store everything in a new list and return it.
 
+            1.File = [File_Name | Section | Path]
+        '''
+        class_files = []
         files = db_command_list.get_files(path)
-        class_file = []
-        class_path_list = db_command_list.create_section_attributes(path)
+        class_section = db_command_list.get_section_name(path)
 
-        for f in files:
-            class_file.append(f)
-            class_file.append(path)
-        return files
+        for f in files:     
+            class_file = []
+            class_file.append(f) #Command-Name
+            class_file.append(class_section) #Section-Name
+            class_file.append(path) #path
+            class_files.append(class_file)
+        return class_files
+    #endregion
 
-        ''' Command-Name | Path | Section-Name | File-List '''
 
-
+    #region main loop
     def loop_sections(self):
+        ''' Get all Folders from the objects path and store it in main_folders.
+            delete the first path because it will be the parent of all main_folders.
+            Each Folder in List should return his files. All These Files will be stored in a list
+            and then returned
+        '''
         path = self.path
         main_folders = [x[0] for x in os.walk(path)] 
         main_folders.pop(0)
         items = []
 
         for p in main_folders:
-            asd = db_command_list.get_sections(p)
-            items += asd 
+            item = db_command_list.get_sections(p)
+            items += item 
         print(items)
-
-
-    def set_path(self, path):
-        self.path = path
-        #get_files()
-
-    
-
-    #all files = commands[1.File[Name | Section | Path]]
+        #endregion
     
 
 
