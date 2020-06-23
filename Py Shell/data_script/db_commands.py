@@ -47,8 +47,13 @@ class DB_Commands():
             return 0
             
 
-
     def insert_commands(self, item):
+        '''This fucntion is called if a specific item doesnt exist in the database.
+            The item will eb added with Real_ID File_Name Section and the Path.
+            ID will be set automatically from the database itself.
+            After that the created query will be closed and executed.         
+        '''
+
         self.query = self.connection.cursor()
         ID = None
         Real_ID = 1
@@ -68,9 +73,14 @@ class DB_Commands():
         self.query.close()
         print("input done")
 
-
         
     def update_commands(self, item):
+        ''' Is just called if item in database is not up to date.
+            Creates a new query and searchs for the element with the given ID.
+            The element will be synchronised with the item list.
+            After Updating the database the query is closed.
+        '''
+
         self.query = self.connection.cursor()
 
         FileName = item[0] 
@@ -85,7 +95,13 @@ class DB_Commands():
         self.query.close()
         print("updated")
 
+
     def editing_loop(self):
+        ''' Checks for each item in the list if it is allready in the datbase
+            or it needs to be updated or inserted.
+            If the item needs an update update_command() is called.
+            If the item doesnt exist in the Database it will be added.  
+        '''
 
         for item in self.items:
             value = self.check_database(item)

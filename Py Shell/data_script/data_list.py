@@ -67,6 +67,8 @@ class db_command_list():
 
     @classmethod
     def globalize_items(cls, items):
+        ''' Add all items to the class variable global_items so that it can be called 
+            from everyvery after a instance was created from the main.py file'''
         cls.global_items = items
 
 
