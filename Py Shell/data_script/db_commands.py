@@ -10,7 +10,27 @@ class DB_Commands():
         self.items = data_list.db_command_list().global_items
      
 
+    def check_exsitens(self):
 
+        query = self.connection.cursor()
+        query.execute("SELECT * FROM commands")
+        row_data = query.fetchall()
+        for row in row_data:
+            name = row[1]
+            path = row[3] + "\\" + name
+
+            if os.path.exists(path) == False:
+                sql_delete_query = """DELETE from commands where ID = ?"""
+                query.execute(sql_delete_query, (row[0], ))
+                self.connection.commit()
+                self.query.close()
+            else:
+                print(name)
+
+        
+
+
+    #region database manipulation 0 | 1 | 2
     def check_database(self, item):
         ''' Search a element name in the database and store its data.
             Then compare the data to the given item and return the status:
@@ -28,7 +48,7 @@ class DB_Commands():
             self.query.close()
             
             row_data = row_data[0]
-            row_data = row_data[2:5]
+            row_data = row_data[1:4]
             compare = []
 
             for x in range(0, len(row_data),1):
@@ -36,8 +56,6 @@ class DB_Commands():
                     compare.append(True)
                 else:
                     compare.append(False)
-            
-            print(compare)
             for comp in compare:
                 if comp == False:
                     return 1
@@ -56,17 +74,16 @@ class DB_Commands():
 
         self.query = self.connection.cursor()
         ID = None
-        Real_ID = 1
         FileName = item[0]
         Section = item[1]
         Path = item[2]
 
         sqlite_select_query = '''INSERT INTO commands
-        (ID, Real_ID, FileName, Section, Path)
+        (ID, FileName, Section, Path)
         VALUES
-        (?,?,?,?,?)
+        (?,?,?,?)
         '''
-        data_tuple = (ID, Real_ID, FileName, Section, Path)
+        data_tuple = (ID, FileName, Section, Path)
 
         self.query.execute(sqlite_select_query,data_tuple)
         self.connection.commit()
@@ -89,18 +106,19 @@ class DB_Commands():
 
         sqlite_select_query = '''UPDATE commands set Section = ? where FileName = ?'''
         data_tuple = (Section, FileName)
-        print(Section)
         self.query.execute(sqlite_select_query, data_tuple)
         self.connection.commit()
         self.query.close()
         print("updated")
+    #endregion
 
 
     def editing_loop(self):
         ''' Checks for each item in the list if it is allready in the datbase
             or it needs to be updated or inserted.
             If the item needs an update update_command() is called.
-            If the item doesnt exist in the Database it will be added.  
+            If the item doesnt exist in the Database it will be added. 
+            After executing database connection will be closed. 
         '''
 
         for item in self.items:
@@ -112,5 +130,10 @@ class DB_Commands():
                 self.update_commands(item)
             else:
                 self.insert_commands(item)
-            
+
+        self.check_exsitens()
+        print(value)
+        self.connection.close()
+        
+
                 

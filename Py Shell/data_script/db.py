@@ -33,7 +33,6 @@ class Database():
         
         query.execute('''CREATE TABLE commands (
             ID integer PRIMARY KEY AUTOINCREMENT,
-            Real_ID integer NOT NULL,
             FileName text NOT NULL,
             Section Not Null,
             Path text Not Null
