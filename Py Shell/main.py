@@ -4,6 +4,7 @@ import time
 import os
 from data_script import db
 from data_script import data_list
+from data_script import db_commands
 #import CommandList
 #import ScriptList
 
@@ -13,11 +14,16 @@ class Program(shell.Shell):
     ''' system function '''
 
     def main(self, list_input):
-        # path = os.path.dirname(os.path.realpath(__file__))
-        # path = path + "\\data_script\\command.db"
-        # db.Database().set_path(path)
-        data_list.db_command_list().loop_sections()
-        #pass
+        #call database
+        path = os.path.dirname(os.path.realpath(__file__))
+        path = path + "\\data_script\\command.db"
+        db.Database().set_path(path)
+
+        #setup data_list
+        data_context = data_list.db_command_list()
+        data_context.loop_sections()
+        db_commands.DB_Commands().editing_loop()
+
 
 
 #region Main Loop

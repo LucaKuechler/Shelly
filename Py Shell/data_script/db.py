@@ -1,8 +1,6 @@
 import sqlite3
 import os
 
-
-
 class Database():
     path = ""
     def __init__(self):
@@ -33,7 +31,7 @@ class Database():
                 Real_ID integer NOT NULL,
                 FileName text NOT NULL,
                 Section Not Null,
-                Path text Not Null,
+                Path text Not Null
             )''')
 
             query.execute('''CREATE TABLE scripts (
@@ -45,6 +43,7 @@ class Database():
 
             cls.commit()
             cls.close()
+            print("entered")
 
 
     @classmethod
@@ -55,8 +54,8 @@ class Database():
 
         if os.path.exists(cls.path) == False:
             cls.create()
-        else:
-            cls.connection = sqlite3.connect(cls.path)
+        
+        cls.connection = sqlite3.connect(cls.path)
 
         print("Done")
         return cls.connection

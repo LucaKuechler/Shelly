@@ -3,8 +3,11 @@ import os
 
 
 class db_command_list():
+    global_items = []
+
     def __init__(self):
         self.path = os.path.dirname(os.path.realpath(__file__))
+        self.items = []
         control_path = "Functions"
         home_path = "data_script"
 
@@ -62,6 +65,11 @@ class db_command_list():
     #endregion
 
 
+    @classmethod
+    def globalize_items(cls, items):
+        cls.global_items = items
+
+
     #region main loop
     def loop_sections(self):
         ''' Get all Folders from the objects path and store it in main_folders.
@@ -76,9 +84,14 @@ class db_command_list():
 
         for p in main_folders:
             item = db_command_list.get_sections(p)
-            items += item 
-        print(items)
-        #endregion
+            items += item
+
+        self.items = items
+        self.globalize_items(self.items)
+
+        # for x in items:
+        #     print(x)
+    #endregion
     
 
 
